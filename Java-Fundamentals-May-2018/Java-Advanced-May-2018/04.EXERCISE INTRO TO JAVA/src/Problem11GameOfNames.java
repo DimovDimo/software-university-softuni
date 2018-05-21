@@ -5,14 +5,13 @@ public class Problem11GameOfNames {
         Scanner scanner = new Scanner(System.in);
         int countPlayers = scanner.nextInt();
         String bestName = "a";
-        int bestPoints = 0;
+        int bestPoints = Integer.MIN_VALUE;
 
         for (int i = 0; i < countPlayers; i++) {
             String name = scanner.next();
             int points = Integer.parseInt(scanner.next());
             for (int j = 0; j < name.length(); j++) {
-                char currentChar = name.charAt(j);
-                int currrentPoints = (int) currentChar;
+                int currrentPoints = (int) name.charAt(j);
                 if (currrentPoints % 2 == 0){
                     points += currrentPoints;
                 } else {

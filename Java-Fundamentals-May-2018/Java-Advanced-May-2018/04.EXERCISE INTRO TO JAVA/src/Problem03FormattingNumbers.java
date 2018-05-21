@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Problem03FormattingNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numberA = scanner.nextInt();
-        double numberB = scanner.nextDouble();
-        double numberC = scanner.nextDouble();
+        String[] numbersAsStrings = scanner.nextLine().split("\\s+");
+        int numberA = Integer.parseInt(numbersAsStrings[0]);
+        double numberB = Double.parseDouble(numbersAsStrings[1]);
+        double numberC = Double.parseDouble(numbersAsStrings[2]);
 
         String hex = Integer
                 .toHexString((int)numberA)
@@ -32,6 +33,6 @@ public class Problem03FormattingNumbers {
         }
 
         System.out.printf("|%s|%s|%s|%s|",
-                hex, binary, hex, hex);
+                hex, binary, thirdColumn, fourthColumn);
     }
 }
