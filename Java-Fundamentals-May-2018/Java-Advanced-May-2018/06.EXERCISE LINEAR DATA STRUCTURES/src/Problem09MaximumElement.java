@@ -1,44 +1,53 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class Problem09MaximumElement {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        ArrayDeque<Integer> stack = new ArrayDeque<>();
-        List<String> maxElements = new ArrayList<>();
-        int countCommands = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < countCommands; i++) {
-            String[] command = scanner.nextLine().split("\\s+");
-            switch (command[0]){
-                case "1":
-                    pushStringAsNumber(stack, command[1]);
-                    break;
-                case "2":
-                    stack.pop();
-                    break;
-                case "3":
-                    maxElements.add(getMaxElement(stack).toString());
-                    break;
-                default:
-                    break;
+    public static void main(String[] args) throws IOException {
+        Deque<Integer> stack = new ArrayDeque<>(), maxStack = new ArrayDeque<>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sstringBuilder = new StringBuilder();
+        int num = Integer.parseInt(reader.readLine());
+        int maxNumber = 0;
+        for (int i = 0; i < num; i++) {
+            String[] input = reader.readLine().split(" ");
+            int command = Integer.parseInt(input[0]);
+            if (command == 1) {
+                maxNumber = getMaxNumberPush(stack, maxStack, maxNumber, input[1]);
+            } else if (command == 2) {
+                maxNumber = getMaxNumberDelete(stack, maxStack, maxNumber);
+            } else {
+                sstringBuilder.append(maxNumber).append(System.lineSeparator());
             }
         }
 
-        System.out.printf("%s", String.join(" ", maxElements));
+        printResult(sstringBuilder);
     }
 
-    private static Integer getMaxElement(ArrayDeque<Integer> stack) {
-        int maxElement = Integer.MIN_VALUE;
-        for (Integer currentNum : stack) {
-            if (currentNum > maxElement){
-                maxElement = currentNum;
+    private static void printResult(StringBuilder sstringBuilder) {
+        System.out.println(sstringBuilder);
+    }
+
+    private static int getMaxNumberDelete(Deque<Integer> stack, Deque<Integer> maxStack, int maxNumber) {
+        if (stack.pop() == maxNumber) {
+            maxStack.pop();
+            if (maxStack.size() > 0) {
+                maxNumber = maxStack.peek();
+            } else {
+                maxNumber = 0;
             }
         }
-
-        return  maxElement;
+        return maxNumber;
     }
 
-    private static void pushStringAsNumber(ArrayDeque<Integer> stack, String s) {
-        int numberForPush = Integer.parseInt(s);
-        stack.push(Integer.parseInt(s));
+    private static int getMaxNumberPush(Deque<Integer> stack, Deque<Integer> maxStack, int maxNumber, String s) {
+        int value = Integer.valueOf(s);
+        if (maxNumber <= value) {
+            maxNumber = value;
+            maxStack.push(maxNumber);
+        }
+        stack.push(value);
+        return maxNumber;
     }
 }

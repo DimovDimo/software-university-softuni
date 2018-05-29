@@ -25,7 +25,7 @@ public class Problem05MatrixShuffling {
                 }
 
                 String[] comands = line.split("\\s+");
-                if (comands[0].equals("swap")){
+                if (comands[0].equals("swap")  && comands.length == 5){
                     int row1 = Integer.parseInt(comands[1]);
                     int col1 = Integer.parseInt(comands[2]);
                     int row2 = Integer.parseInt(comands[3]);
