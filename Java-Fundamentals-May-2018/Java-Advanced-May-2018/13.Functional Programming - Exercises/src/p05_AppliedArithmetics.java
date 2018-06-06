@@ -27,10 +27,10 @@ public class p05_AppliedArithmetics {
         };
 
         Consumer<List<Integer>> printNumbers = nums -> {
-            List<String> output = new LinkedList<>();
-            for (Integer num : nums) {
-                output.add(num + "");
-            }
+                List<String> output = new LinkedList<>();
+                for (Integer num : nums) {
+                    output.add(num + "");
+                }
 
             System.out.printf("%s%n", String.join(" ", output));};
 
