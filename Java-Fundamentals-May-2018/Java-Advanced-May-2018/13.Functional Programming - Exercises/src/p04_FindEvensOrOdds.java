@@ -6,7 +6,7 @@ import java.util.function.BiPredicate;
 public class p04_FindEvensOrOdds {
     public static void main(String[] args) throws IOException {
         BiPredicate<Integer, String> isTargetNumber = (num, condition) -> {
-            if ("odd".equals(condition) && num % 2 == 1){
+            if ("odd".equals(condition) && num % 2 != 0){
                 return true;
             } else if ("even".equals(condition) && num % 2 == 0){
                 return true;
