@@ -27,27 +27,29 @@ public class p04_SortStudents {
                 .sorted(Comparator.comparing(Student::getLastName).thenComparing(Student::getFirstName, Comparator.reverseOrder()))
                 .forEach(System.out::println);
     }
+
+    public static class Student{
+        private String firstName;
+        private String lastName;
+
+        public Student(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("%s %s", this.firstName, this.lastName);
+        }
+    }
 }
 
-class Student{
-    private String firstName;
-    private String lastName;
 
-    public Student(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%s %s", this.firstName, this.lastName);
-    }
-}
