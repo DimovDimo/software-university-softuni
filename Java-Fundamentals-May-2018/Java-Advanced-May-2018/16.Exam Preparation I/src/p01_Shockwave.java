@@ -31,9 +31,9 @@ public class p01_Shockwave {
         int x2 = cordinatesMatrix.get(2);
         int y2 = cordinatesMatrix.get(3);
 
-        for (int row = y1; row <= y2; row++) {
-            for (int col = x1; col <= x2; col++) {
-                matrix[row][col] += 1;
+        for (int row = x1; row <= x2; row++) {
+            for (int col = y1; col <= y2; col++) {
+                matrix[row][col]++;
             }
         }
     }
