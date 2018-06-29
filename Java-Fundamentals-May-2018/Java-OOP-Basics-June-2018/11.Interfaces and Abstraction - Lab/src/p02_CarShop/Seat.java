@@ -6,9 +6,9 @@ public class Seat implements Car, Serializable {
     private final String countryProduced;
     private final String model;
     private final String color;
-    private final int horsePower;
+    private final Integer horsePower;
 
-    public Seat(String model, String color, int horsePower, String countryProduced) {
+    public Seat(String model, String color, Integer horsePower, String countryProduced) {
         this.model = model;
         this.color = color;
         this.horsePower = horsePower;
