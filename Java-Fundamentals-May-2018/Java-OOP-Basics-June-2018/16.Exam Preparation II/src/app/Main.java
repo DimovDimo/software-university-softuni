@@ -1,6 +1,6 @@
 package app;
 
-import app.core.CarManagerImpl;
+import app.core.CarManager;
 import app.engines.Engine;
 import app.io.ConsoleInputReader;
 import app.io.ConsoleOutputWriter;
@@ -11,7 +11,7 @@ public class Main {
         ConsoleInputReader inputReader = new ConsoleInputReader();
         ConsoleOutputWriter outputWriter = new ConsoleOutputWriter();
         InputParser inputParser = new InputParser();
-        CarManagerImpl carManagerImpl = new CarManagerImpl();
+        CarManager carManagerImpl = new CarManager();
         Engine engine = new Engine(inputReader, outputWriter, inputParser, carManagerImpl);
 
         engine.run();
