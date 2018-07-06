@@ -35,7 +35,7 @@ public class Engine {
     }
 
     private void dispachCommand(List<String> commandParams) {
-        String command = commandParams.remove(0);
+        String command = commandParams.get(0);
 
         switch (command){
 
