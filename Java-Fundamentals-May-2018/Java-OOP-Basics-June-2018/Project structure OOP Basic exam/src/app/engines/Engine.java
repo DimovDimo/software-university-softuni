@@ -36,9 +36,16 @@ public class Engine {
 
     private void dispachCommand(List<String> commandParams) {
         String command = commandParams.get(0);
-
+		String result = null;
+		
         switch (command){
+			case "":
 
+                break;
+        }
+		
+        if (result != null){
+            this.outputWriter.writeLine(result);
         }
     }
 }
