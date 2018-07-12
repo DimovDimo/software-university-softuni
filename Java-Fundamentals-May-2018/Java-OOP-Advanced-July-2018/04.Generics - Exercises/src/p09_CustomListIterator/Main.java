@@ -50,8 +50,8 @@ public class Main {
                     result = customList.getMin();
                     break;
                 case "Print":
-//                    result = customList.toString();
-                    print(customList);
+                    result = customList.toString();
+//                    print(customList);
                     break;
                 case "Sort":
                     customList.sort();
@@ -63,9 +63,5 @@ public class Main {
                         String.valueOf(result));
             }
         }
-    }
-
-    private static void print(MyList<String> customList) {
-        
     }
 }
