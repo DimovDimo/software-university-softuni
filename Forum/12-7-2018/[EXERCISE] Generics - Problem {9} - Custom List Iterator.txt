@@ -1,0 +1,18 @@
+Link: https://softuni.bg/forum/21745/exercise-generics-problem-9-custom-list-iterator
+
+Здравейте колега,
+
+Problem 1.*Custom List Iterator 
+Задачата е с една звездичка(*), което означава, ча материала, който ни трябва, за да я решим е от следващата лекция, тоест не ни е преподаван и затова задачата не е задължителна.
+
+Можеш да погледнеш материалите от предишни издания на курса.
+
+Това е линк към Java OOP Advanced - ноември 2017, в лекциатя за Iterator, Iterable, Comparator, Comparable:
+
+https://softuni.bg/trainings/1730/java-oop-advanced-november-2017#lesson-6313
+
+Поздрави,
+
+Димо Димов
+
+Студент в softuni.bg
