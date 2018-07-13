@@ -38,10 +38,7 @@ public class Threeuple<F, S, T> {
 
     @Override
     public String toString() {
-        return this.firstItem
-                + " -> " +
-                this.secondItem
-                + " -> " +
-                this.thirdItem;
+        StringBuilder sb = new StringBuilder();
+        return sb.append(this.firstItem).append( " -> ").append(this.secondItem).append(" -> ").append(this.thirdItem).toString();
     }
 }

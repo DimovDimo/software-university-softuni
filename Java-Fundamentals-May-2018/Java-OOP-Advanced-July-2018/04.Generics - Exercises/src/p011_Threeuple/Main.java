@@ -17,9 +17,12 @@ public class Main {
     }
 
     private static void printThreeuples(List<Threeuple> threeuples) {
+        StringBuilder sb = new StringBuilder();
         for (Threeuple threeuple : threeuples) {
-            System.out.println(threeuple.toString());
+            sb.append(threeuple).append("\n");
         }
+
+        System.out.print(sb.toString());
     }
 
     private static void readThirdThreeuple(BufferedReader reader, List<Threeuple> threeuples) throws IOException {
@@ -35,7 +38,7 @@ public class Main {
         String[] tokens = reader.readLine().split("\\s+");
         String name = tokens[0];
         int litersOfBeer = Integer.parseInt(tokens[1]);
-        boolean isDrunk = Boolean.valueOf(tokens[2]);
+        boolean isDrunk = tokens[2].equals("drunk");
         Threeuple<String, Integer, Boolean> secondThreeuple = new Threeuple<>(name, litersOfBeer, isDrunk);
         threeuples.add(secondThreeuple);
     }

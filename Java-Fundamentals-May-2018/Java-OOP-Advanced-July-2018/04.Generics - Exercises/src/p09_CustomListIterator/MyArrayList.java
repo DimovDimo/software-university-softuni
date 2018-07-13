@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
+public class MyArrayList<T extends Comparable<T>> implements MyList<T>, Iterable<T> {
 
     private List<T> elements;
 
@@ -96,4 +96,22 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         return result.toString();
     }
 
+    @Override
+    public Iterator<T> iterator() {
+        return new MyArrayListIterator();
+    }
+
+    public final class MyArrayListIterator implements Iterator<T>{
+        private int counter = 0;
+
+        @Override
+        public boolean hasNext() {
+            return this.counter < elements.size();
+        }
+
+        @Override
+        public T next() {
+            return elements.get(counter++);
+        }
+    }
 }
