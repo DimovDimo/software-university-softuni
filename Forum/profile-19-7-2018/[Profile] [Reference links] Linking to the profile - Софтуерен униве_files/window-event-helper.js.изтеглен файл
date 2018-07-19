@@ -1,0 +1,15 @@
+﻿var Suls = Suls || {};
+
+Suls.WindowEventHelper = (function () {
+    var showWarningWhenIncompleteAction = function (selector) {
+        $(selector).on('change', function () {
+            if ($(this).val().trim() !== '') {
+                window.onbeforeunload = sulsControls.Validation.getBackNavigationWarring;
+            }
+        });
+    };
+
+    return {
+        showWarningWhenIncompleteAction: showWarningWhenIncompleteAction
+    };
+}());
