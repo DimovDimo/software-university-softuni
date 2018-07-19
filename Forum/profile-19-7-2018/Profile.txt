@@ -1,3 +1,5 @@
+Forum: https://softuni.bg/forum/21787/profile-reference-links-linking-to-the-profile
+
 Здравейте колеги,
 
 В профила, менюто което излиза когато кликнем на нашата снимка, можем да зададем линкове към github.com, stackoverflow.com, facebook.com и други сайтове.
