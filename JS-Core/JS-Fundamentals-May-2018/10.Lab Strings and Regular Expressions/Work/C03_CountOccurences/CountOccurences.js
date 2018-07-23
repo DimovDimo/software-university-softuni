@@ -2,7 +2,7 @@ function countOccurences(input) {
     let targetString = input[0];
     let searchString = input[1];
     let count = 0;
-    let startIndex = searchString.indexOf(targetString);;
+    let startIndex = searchString.indexOf(targetString);
 
     while (startIndex > -1) {
         count++;
