@@ -1,6 +1,8 @@
 package rpg_lab;
 
-public class Dummy {
+import Interfaces.Target;
+
+public class Dummy implements Target {
 
     private int health;
     private int experience;
