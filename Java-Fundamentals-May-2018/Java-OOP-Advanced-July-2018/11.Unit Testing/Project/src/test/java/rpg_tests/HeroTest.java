@@ -5,6 +5,7 @@ import Interfaces.Weapon;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 import rpg_lab.Dummy;
 import rpg_lab.Hero;
 
@@ -54,8 +55,13 @@ public class HeroTest {
 
     @Test
     public void attackGainsXPIfTargetIsDead(){
-        Hero hero = new Hero("hero", this.weapon);
-        hero.attack(this.target);
+        Weapon weaponMock = Mockito.mock(Weapon.class);
+        Target targetMock = Mockito.mock(Target.class);
+        Mockito.when(targetMock.isDead()).thenReturn(true);
+        Mockito.when(targetMock.giveExperience()).thenReturn(XP);
+
+        Hero hero = new Hero("hero", weaponMock);
+        hero.attack(targetMock);
 
         Assert.assertEquals("Wrong XP", XP, hero.getExperience());
     }

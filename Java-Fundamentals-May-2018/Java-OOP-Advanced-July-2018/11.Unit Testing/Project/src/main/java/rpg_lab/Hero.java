@@ -3,6 +3,8 @@ package rpg_lab;
 import Interfaces.Target;
 import Interfaces.Weapon;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class Hero {
@@ -10,6 +12,7 @@ public class Hero {
     private String name;
     private int experience;
     private Weapon weapon;
+    private List<Weapon> weapons;
 
     public Hero(String name, Weapon weapon) {
         this.name = name;
@@ -35,5 +38,9 @@ public class Hero {
         if (target.isDead()) {
             this.experience += target.giveExperience();
         }
+    }
+
+    public Iterable<Weapon> getInventory(){
+        return Collections.unmodifiableList(this.weapons);
     }
 }
