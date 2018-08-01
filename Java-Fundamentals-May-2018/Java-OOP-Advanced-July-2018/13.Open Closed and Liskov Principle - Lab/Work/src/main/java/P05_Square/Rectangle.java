@@ -1,26 +1,26 @@
 package P05_Square;
 
 class Rectangle {
-    protected int m_width;
-    protected int m_height;
-
-    public void setWidth(int width) {
-        m_width = width;
-    }
-
-    public void setHeight(int height) {
-        m_height = height;
-    }
+    private int width;
+    private int height;
 
     public int getWidth() {
-        return m_width;
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
     }
 
     public int getHeight() {
-        return m_height;
+        return height;
     }
 
-    public int getArea() {
-        return m_width * m_height;
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getArea(){
+        return this.height * this.width;
     }
 }
