@@ -10,4 +10,9 @@ public class Employee {
     private String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + this.name;
+    }
 }

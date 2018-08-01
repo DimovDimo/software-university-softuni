@@ -8,4 +8,9 @@ public class Manager extends Employee {
         super(name);
         this.documents = documents;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Documents: " + this.documents;
+    }
 }

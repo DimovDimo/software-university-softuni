@@ -10,19 +10,11 @@ public class DetailsPrinter {
 
     public void printDetails() {
         for (Employee employee : employees) {
-            if (employee instanceof Manager) {
-                this.printManager((Manager) employee);
-            } else {
-                this.printEmployee(employee);
-            }
+            this.printEmployee(employee);
         }
     }
 
     private void printEmployee(Employee employee) {
         System.out.println(employee);
-    }
-
-    private void printManager(Manager manager) {
-        System.out.println(manager);
     }
 }
