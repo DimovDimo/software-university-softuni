@@ -1,6 +1,6 @@
 package P02_FileStream;
 
-public class File {
+public class File implements Streamble {
 
     private String name;
     private int length;

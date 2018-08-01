@@ -1,6 +1,6 @@
 package P02_FileStream;
 
-public class Music {
+public class Music implements Streamble {
 
     private String artist;
     private String album;

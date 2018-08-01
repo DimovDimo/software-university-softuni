@@ -1,14 +1,13 @@
 package P02_FileStream;
 
 public class StreamProgressInfo {
-    private File file;
+    private Streamble cource;
 
-    // If we want to stream a music file, we can't
-    public StreamProgressInfo(File file) {
-        this.file = file;
+    public StreamProgressInfo(Streamble cource) {
+        this.cource = cource;
     }
 
     public int calculateCurrentPercent() {
-        return (this.file.getBytesSent() * 100) / this.file.getLength();
+        return (this.cource.getBytesSent() * 100) / this.cource.getLength();
     }
 }
