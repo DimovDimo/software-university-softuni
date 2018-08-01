@@ -1,4 +1,4 @@
 package P03_GraphicEditor;
 
-public class Shape {
+public abstract class Shape implements Drawable {
 }
