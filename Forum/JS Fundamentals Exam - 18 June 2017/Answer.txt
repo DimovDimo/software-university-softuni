@@ -1,0 +1,75 @@
+Link: https://softuni.bg/forum/19987/zadacha-js-fundamentals-exam-18-june-2017
+
+Здравей Simeon22,
+
+Това е моето решение: https://github.com/DimovDimo/Software-University-SoftUni/blob/master/JS-Core/JS-Fundamentals-May-2018/15.Exam%20Prep%20-%20JS%20Fundamentals%20Exam%20-%2018%20June%202017/Work/A01_ThePyramidOfKingDjoser/ThePyramidOfKingDjoser.js
+
+Решението дава 100/100.
+
+JS Fundamentals Exam - 18 June 2017
+
+ 
+
+Ще обясня моя код. Надявам се това да Ви помогне.
+
+Първо декларираме променливите.
+
+[base, increment] = [base, increment].map(Number);
+    let height = 0;
+    let step = 0;
+    let stone = 0;
+    let marble = 0;
+    let lapis = 0;
+    let gold = 0;
+Изпълняваме цикъл do while, защото може пирамидата да има само едно ниво.
+
+Всеки път ще намаляме base с 2 , защото квадрата на основата ще има с 2 по малка страна. Като започваме със стъпка 0.
+
+base = base - step;
+Взимаме количеството камък което ще ни трябва за текущото ниво на пирамидата. Където base - 2  е текущата основа, но махаме външните камъни, които са декорацията. После **2 повдигаме на степен 2, за да получим квадрат.
+
+let currentStone = (base - 2)**2;
+Ако от основата са останали 1 или 2 камъка (base === 1 || base === 2), следователно ние се намираме на върха на пирамидата. Тогава златотто ще е равно на gold += base**2, защото върха е квадрат, а base е страната му.
+
+if (base === 1 || base === 2){
+            gold += base**2;
+}
+Ако ние не се намираме на върха, то тогава ще прибавим текущите камъни към общото кличество камъни.
+
+stone += currentStone;
+Сега ние ще вземем декуращията, която е квадрата на base минус текущите камъни. Ако ние сме на всяко 5-то ниво ще използвме като декорация lapis, в противен ще използваме marble.
+
+let decoration = (base**2) - currentStone;
+if ((height + 1) % 5 === 0) {
+    lapis += decoration;
+} else {
+    marble += decoration;
+}
+Ще овеличим височината с 1, ще поставим step = 2, с която намаляме base всеки път, освен първия път и ще проверим дали има друго ниво на което се налага да строим.
+
+    height++;
+    step = 2;
+} while (base - 2 > 0)
+Всички реурси ще ги закръглим нагоре.
+
+stone = Math.ceil(stone*increment);
+marble = Math.ceil(marble*increment);
+lapis = Math.ceil(lapis*increment);
+gold = Math.ceil(gold*increment);
+Височината ще я закръглим на долу.
+
+height = Math.floor(height*increment);
+Остава само да принтираме резултата.
+
+console.log(`Stone required: ${stone}`);
+console.log(`Marble required: ${marble}`);
+console.log(`Lapis Lazuli required: ${lapis}`);
+console.log(`Gold required: ${gold}`);
+console.log(`Final pyramid height: ${height}`);
+Това беще моя код, заедно с обяснението.
+
+С уважение,
+
+Димо Димов
+
+студент в softuni.bg
