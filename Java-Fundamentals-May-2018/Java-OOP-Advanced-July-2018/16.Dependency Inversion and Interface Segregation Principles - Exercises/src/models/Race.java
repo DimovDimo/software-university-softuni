@@ -1,15 +1,15 @@
 package models;
 
-import Utility.Constants;
-import Utility.Validator;
-import contracts.IRace;
+import models.boats.MotorBoat;
+import utility.Constants;
+import utility.Validator;
 import exeptions.DuplicateModelException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Race implements IRace {
+public class Race implements contracts.Race {
     private int distance;
     private int windSpeed;
     private int oseanCurrentSpeed;
@@ -30,7 +30,7 @@ public class Race implements IRace {
     }
 
     private void setDistance(int distance) {
-        Validator.ValidatePropertyValue(distance, "Distance");
+        Validator.validatePropertyValue(distance, "Distance");
         this.distance = distance;
     }
 
@@ -65,7 +65,7 @@ public class Race implements IRace {
 
     public void AddParticipant(MotorBoat boat) throws DuplicateModelException {
         if (this.getRegisteredBoats().containsKey(boat.getModel())) {
-            throw new DuplicateModelException(Constants.DuplicateModelMessage);
+            throw new DuplicateModelException(Constants.DUPLICATE_MODEL_MESSAGE);
         }
         this.registeredBoats.put(boat.getModel(), boat);
     }

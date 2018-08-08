@@ -1,5 +1,5 @@
 package contracts;
 
-public interface IModelable {
+public interface Modelable {
     String getModel();
 }

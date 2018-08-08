@@ -1,79 +1,74 @@
-package models;
+package models.boats;
 
-import Utility.Constants;
-import Utility.Validator;
-import contracts.IModelable;
-import contracts.IRace;
+import contracts.Modelable;
+import contracts.Race;
+import models.engines.JetEngine;
+import models.engines.SterndriveEngine;
+import utility.Constants;
+import utility.Validator;
 
 import java.util.List;
-import java.util.stream.IntStream;
 
-public final class MotorBoat implements IModelable {
-    private String model;
-    private int weight;
-    private int oars;
-    private int sailEfficiency;
+public final class MotorBoat {
+
     private int cargoWeight;
     private List<JetEngine> jetEngines;
     private List<SterndriveEngine> sterndriveEngines;
     public Boolean isSailboat;
 
     public MotorBoat(String model, int weight, int sailEfficiency, int oars, int cargoWeight, List<JetEngine> jetEngines, List<SterndriveEngine> sterndriveEngines, Boolean isSailboat) {
-        this.setSailEfficiency(sailEfficiency);
+
         this.cargoWeight = cargoWeight;
-        this.setOars(oars);
-        this.model = model;
-        this.setWeight(weight);
         this.jetEngines = jetEngines;
         this.sterndriveEngines = sterndriveEngines;
         this.isSailboat = isSailboat;
     }
 
-    @Override
-    public String getModel() {
-        return model;
-    }
+//    @Override
+//    public String getModel() {
+//        return model;
+//    }
+//
+//    public void setModel(String model) {
+//        Validator.validateModelLength(model, Constants.MIN_BOAT_MODEL_LENGTH);
+//        this.model = model;
+//    }
 
-    public void setModel(String model) {
-        Validator.ValidateModelLength(model, Constants.MinBoatModelLength);
-        this.model = model;
-    }
+//    public int getWeight() {
+//        return weight;
+//    }
+//
+//    public void setWeight(int weight) {
+//        Validator.validatePropertyValue(weight, "Weight");
+//        this.weight = weight;
+//    }
 
-    public int getWeight() {
-        return weight;
-    }
+//    public int getOars() {
+//        return oars;
+//    }
+//
+//    public void setOars(int oars) {
+//        Validator.validatePropertyValue(oars, "Oars");
+//        this.oars = oars;
+//    }
 
-    public void setWeight(int weight) {
-        Validator.ValidatePropertyValue(weight, "Weight");
-        this.weight = weight;
-    }
-
-    public int getOars() {
-        return oars;
-    }
-
-    public void setOars(int oars) {
-        Validator.ValidatePropertyValue(oars, "Oars");
-        this.oars = oars;
-    }
-
-    public int getSailEfficiency() {
-        return sailEfficiency;
-    }
-
-    public void setSailEfficiency(int sailEfficiency) {
-        if (sailEfficiency < 1 || sailEfficiency > 100) {
-            throw new IllegalArgumentException(Constants.IncorrectSailEfficiencyMessage);
-        }
-        this.sailEfficiency = sailEfficiency;
-    }
+//    public int getSailEfficiency() {
+//        return sailEfficiency;
+//    }
+//
+//    public void setSailEfficiency(int sailEfficiency) {
+//        if (sailEfficiency < 1 || sailEfficiency > 100) {
+//            throw new IllegalArgumentException(Constants.INCORRECT_SAIL_EFFICIENCY_MESSAGE);
+//        }
+//        this.sailEfficiency = sailEfficiency;
+//    }
 
     public int getCargoWeight() {
         return cargoWeight;
     }
 
     public void setCargoWeight(int cargoWeight) {
-        Validator.ValidatePropertyValue(cargoWeight, "Cargo Weight");
+        Validator.validatePropertyValue(cargoWeight, "Cargo Weight");
         this.cargoWeight = cargoWeight;
     }
 
@@ -93,7 +88,7 @@ public final class MotorBoat implements IModelable {
         this.sterndriveEngines = sterndriveEngines;
     }
 
-    public double CalculateRaceSpeed(IRace race) {
+    public double CalculateRaceSpeed(Race race) {
         //if (this.getJetEngines().size() + this.getSterndriveEngines().size() == 2) {
         //    var speed = this.JetEngines.Sum(x = > x.Output)+this.SterndriveEngines.Sum(x = > x.Output)
         //    -this.Weight + (race.OceanCurrentSpeed / 5d);

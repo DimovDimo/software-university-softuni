@@ -1,12 +1,12 @@
-package models;
+package models.engines;
 
-import Utility.Constants;
-import Utility.Validator;
-import contracts.IModelable;
+import contracts.Modelable;
+import utility.Constants;
+import utility.Validator;
 
-public class JetEngine implements IModelable
+public class SterndriveEngine implements Modelable
 {
-    private static final int Multiplier = 5;
+    private static final int Multiplier = 7;
 
     public int cachedOutput;
 
@@ -16,7 +16,7 @@ public class JetEngine implements IModelable
 
     private int displacement;
 
-    public JetEngine(String model, int horsepower, int displacement)
+    public SterndriveEngine(String model, int horsepower, int displacement)
     {
         this.setModel(model);
         this.setHorsepower(horsepower);
@@ -29,7 +29,7 @@ public class JetEngine implements IModelable
     }
 
     public void setModel(String model) {
-        Validator.ValidateModelLength(model, Constants.MinBoatEngineModelLength);
+        Validator.validateModelLength(model, Constants.MIN_BOAT_ENGINE_MODEL_LENGTH);
         this.model = model;
     }
 
@@ -48,7 +48,7 @@ public class JetEngine implements IModelable
     }
 
     private void setHorsepower(int horsepower) {
-        Validator.ValidatePropertyValue(horsepower, "Horsepower");
+        Validator.validatePropertyValue(horsepower, "Horsepower");
         this.horsepower = horsepower;
     }
 
@@ -57,7 +57,7 @@ public class JetEngine implements IModelable
     }
 
     public void setDisplacement(int displacement) {
-        Validator.ValidatePropertyValue(displacement, "Displacement");
+        Validator.validatePropertyValue(displacement, "Displacement");
         this.displacement = displacement;
     }
 }

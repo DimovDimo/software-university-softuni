@@ -1,11 +1,11 @@
 package contracts;
 
 import exeptions.DuplicateModelException;
-import models.MotorBoat;
+import models.boats.MotorBoat;
 
 import java.util.List;
 
-public interface IRace
+public interface Race
 {
     int getDistance();
 

@@ -1,12 +1,10 @@
-package Core;
+package core;
 
-import contracts.IBoatSimulatorController;
-import contracts.ICommandHandler;
-import contracts.IRace;
+import contracts.BoatSimulatorController;
+import contracts.Race;
 import database.BoatSimulatorDatabase;
 import exeptions.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -20,21 +18,21 @@ public class Engine {
         this.commandHandler = commandHandler;
     }
 
-    public Engine()
-    {
-        this.commandHandler = new CommandHandler();
-    }
+//    public Engine()
+//    {
+//        this.commandHandler = new CommandHandler();
+//    }
 
-    public ICommandHandler getCommandHandler;
+//    public contracts.CommandHandler getCommandHandler;
 
-    public void Run()
+    public void run()
     {
         while (true)
         {
             Scanner scanner = new Scanner(System.in);
             String line = scanner.nextLine();
-            String name = "";
-            List<String> parameters = new ArrayList<>();
+            String name;
+            List<String> parameters;
 
             if (line.equals("End")) {
                 break;
@@ -46,7 +44,7 @@ public class Engine {
 
             try
             {
-                String commandResult = this.commandHandler.ExecuteCommand(name, parameters);
+                String commandResult = this.commandHandler.executeCommand(name, parameters);
                 System.out.println(commandResult);
             }
             catch (Exception ex)
@@ -58,67 +56,67 @@ public class Engine {
         }
     }
 
-    public static void main(String[] args) {
-        IBoatSimulatorController ctrl = new IBoatSimulatorController() {
-            @Override
-            public IRace getCurrentRace() {
-                return null;
-            }
-
-            @Override
-            public BoatSimulatorDatabase getDatabase() {
-                return null;
-            }
-
-            @Override
-            public String CreateBoatEngine(String model, int horsepower, int displacement, String engineType) {
-                return null;
-            }
-
-            @Override
-            public String CreateRowBoat(String model, int weight, int oars) throws DuplicateModelException {
-                return null;
-            }
-
-            @Override
-            public String CreateSailBoat(String model, int weight, int sailEfficiency) throws DuplicateModelException {
-                return null;
-            }
-
-            @Override
-            public String CreatePowerBoat(String model, int weight, String firstEngineModel, String secondEngineModel) throws NonExistantModelException, DuplicateModelException {
-                return null;
-            }
-
-            @Override
-            public String CreateYacht(String model, int weight, String engineModel, int cargoWeight) throws
-                    NonExistantModelException, DuplicateModelException {
-                return null;
-            }
-
-            @Override
-            public String OpenRace(int distance, int windSpeed, int oceanCurrentSpeed, Boolean allowsMotorboats) throws RaceAlreadyExistsException {
-                return null;
-            }
-
-            @Override
-            public String SignUpBoat(String model) throws NonExistantModelException, DuplicateModelException, NoSetRaceException {
-                return null;
-            }
-
-            @Override
-            public String StartRace() throws InsufficientContestantsException, NoSetRaceException {
-                return null;
-            }
-
-            @Override
-            public String GetStatistic() {
-                return null;
-            }
-        };
-
-        CommandHandler commandHandler = new CommandHandler(ctrl);
-        Engine engine = new Engine();
-        engine.Run();
-    }
+//    public static void main(String[] args) {
+//        BoatSimulatorControllerImpl ctrl = new BoatSimulatorControllerImpl() {
+//            @Override
+//            public Race getCurrentRace() {
+//                return null;
+//            }
+//
+//            @Override
+//            public BoatSimulatorDatabase getDatabase() {
+//                return null;
+//            }
+//
+//            @Override
+//            public String createBoatEngine(String model, int horsepower, int displacement, String engineType) {
+//                return null;
+//            }
+//
+//            @Override
+//            public String createRowBoat(String model, int weight, int oars) throws DuplicateModelException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String createSailBoat(String model, int weight, int sailEfficiency) throws DuplicateModelException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String createPowerBoat(String model, int weight, String firstEngineModel, String secondEngineModel) throws NonExistentModelException, DuplicateModelException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String createYacht(String model, int weight, String engineModel, int cargoWeight) throws
+//                    NonExistentModelException, DuplicateModelException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String openRace(int distance, int windSpeed, int oceanCurrentSpeed, Boolean allowsMotorboats) throws RaceAlreadyExistsException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String signUpBoat(String model) throws NonExistentModelException, DuplicateModelException, NoSetRaceException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String startRace() throws InsufficientContestantsException, NoSetRaceException {
+//                return null;
+//            }
+//
+//            @Override
+//            public String getStatistic() {
+//                return null;
+//            }
+//        };
+//
+//        CommandHandler commandHandler = new CommandHandler(ctrl);
+//        Engine engine = new Engine();
+//        engine.run();
+//    }
 }

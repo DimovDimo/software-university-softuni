@@ -1,32 +1,32 @@
 package database;
 
-import contracts.IModelable;
-import contracts.IRepository;
-import models.MotorBoat;
+import contracts.Modelable;
+import contracts.Repository;
+import models.boats.MotorBoat;
 
 public class BoatSimulatorDatabase {
-    IRepository<MotorBoat> boats;
-    IRepository<IModelable> engines;
+    Repository<MotorBoat> boats;
+    Repository<Modelable> engines;
 
-    public BoatSimulatorDatabase()
-    {
-        this.setBoats(new Repository<MotorBoat>());
-        this.setEngines(new Repository<IModelable>());
+    @SuppressWarnings("unchecked")
+    public BoatSimulatorDatabase() {
+        this.boats = new RepositoryImpl();
+        this.engines = new RepositoryImpl();
     }
 
-    public IRepository<MotorBoat> getBoats() {
+    public Repository<MotorBoat> getBoats() {
         return this.boats;
     }
 
-    private void setBoats(IRepository<MotorBoat> boats) {
-        this.boats = boats;
-    }
+//    private void setBoats(RepositoryImpl<MotorBoat> boats) {
+//        this.boats = boats;
+//    }
 
-    public IRepository<IModelable> getEngines() {
+    public Repository<Modelable> getEngines() {
         return this.engines;
     }
 
-    private void setEngines(IRepository<IModelable> engines) {
-        this.engines = engines;
-    }
+//    private void setEngines(contracts.RepositoryImpl<Modelable> engines) {
+//        this.engines = engines;
+//    }
 }
