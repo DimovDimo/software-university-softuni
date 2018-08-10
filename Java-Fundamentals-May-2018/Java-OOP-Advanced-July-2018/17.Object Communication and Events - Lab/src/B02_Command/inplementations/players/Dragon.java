@@ -1,7 +1,7 @@
-package A01_Logger.inplementations;
+package B02_Command.inplementations.players;
 
-import A01_Logger.interfaces.Target;
 import B02_Command.abstracts.Logger;
+import B02_Command.interfaces.*;
 
 public class Dragon implements Target {
 
@@ -11,7 +11,7 @@ public class Dragon implements Target {
     private int hp;
     private int reward;
     private boolean eventTriggered;
-    Logger logger;
+    private Logger logger;
 
     public Dragon(String id, int hp, int reward, Logger logger) {
         this.id = id;
