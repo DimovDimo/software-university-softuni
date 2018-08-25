@@ -14,7 +14,7 @@ public class Assassin extends BaseHero {
 
     private static final int DAMAGE = 300;
 
-    protected Assassin(String name, Inventory inventory) {
+    public Assassin(String name, Inventory inventory) {
         super(name, STRENGTH, AGILITY, INTELLIGENCE, HIT_POINTS, DAMAGE, inventory);
     }
 }

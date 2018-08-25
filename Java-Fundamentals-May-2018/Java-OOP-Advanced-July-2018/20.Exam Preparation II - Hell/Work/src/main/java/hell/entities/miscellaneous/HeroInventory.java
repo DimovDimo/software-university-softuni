@@ -1,5 +1,6 @@
 package hell.entities.miscellaneous;
 
+import hell.entities.miscellaneous.items.CommonItem;
 import hell.interfaces.Inventory;
 import hell.interfaces.Item;
 import hell.interfaces.Recipe;
@@ -67,7 +68,6 @@ public class HeroInventory implements Inventory {
 
             if (requiredItems.isEmpty()) {
                 this.combineRecipe(recipe);
-                break;
             }
         }
     }
@@ -81,7 +81,14 @@ public class HeroInventory implements Inventory {
 
         //TODO: Initialize the newItem variable, with an object of the CommonItem class.
         //TODO: Initialize the newItem variable, with the stat bonuses of the "recipe" parameter.
-        Item newItem = null;
+        Item newItem = new CommonItem(
+                recipe.getName(),
+                recipe.getStrengthBonus(),
+                recipe.getAgilityBonus(),
+                recipe.getIntelligenceBonus(),
+                recipe.getHitPointsBonus(),
+                recipe.getDamageBonus()
+        );
 
         this.commonItems.put(newItem.getName(), newItem);
     }

@@ -14,7 +14,7 @@ public class Wizard extends BaseHero {
 
     private static final int DAMAGE = 250;
 
-    protected Wizard(String name, Inventory inventory) {
+    public Wizard(String name, Inventory inventory) {
         super(name, STRENGTH, AGILITY, INTELLIGENCE, HIT_POINTS, DAMAGE, inventory);
     }
 }

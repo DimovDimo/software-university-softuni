@@ -14,7 +14,7 @@ public class Barbarian extends BaseHero {
 
     private static final int DAMAGE = 150;
 
-    protected Barbarian(String name, Inventory inventory) {
+    public Barbarian(String name, Inventory inventory) {
         super(name, STRENGTH, AGILITY, INTELLIGENCE, HIT_POINTS, DAMAGE, inventory);
     }
 }

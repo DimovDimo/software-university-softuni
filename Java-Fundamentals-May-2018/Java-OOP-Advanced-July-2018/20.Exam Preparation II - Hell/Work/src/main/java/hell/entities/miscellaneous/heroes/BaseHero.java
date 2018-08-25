@@ -52,27 +52,27 @@ public abstract class BaseHero implements Hero {
 
     @Override
     public long getStrength() {
-        return this.strength;
+        return this.strength + this.inventory.getTotalStrengthBonus();
     }
 
     @Override
     public long getAgility() {
-        return this.agility;
+        return this.agility + this.inventory.getTotalAgilityBonus();
     }
 
     @Override
     public long getIntelligence() {
-        return this.intelligence;
+        return this.intelligence + this.inventory.getTotalIntelligenceBonus();
     }
 
     @Override
     public long getHitPoints() {
-        return this.hitPoints;
+        return this.hitPoints + this.inventory.getTotalHitPointsBonus();
     }
 
     @Override
     public long getDamage() {
-        return this.damage;
+        return this.damage + this.inventory.getTotalDamageBonus();
     }
 
     @Override
