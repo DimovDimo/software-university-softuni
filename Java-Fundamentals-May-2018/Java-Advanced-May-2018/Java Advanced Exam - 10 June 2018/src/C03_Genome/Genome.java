@@ -3,10 +3,7 @@ package C03_Genome;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -27,12 +24,17 @@ public class Genome {
             Matcher genomeMatcher = genomePattern.matcher(line);
             if (genomeMatcher.find()){
 //                String[] genome = genomeMatcher.group().split("(\\[=-<\\]+)");
-                String nomeOfGene = Arrays.stream(genomeMatcher.group(1).split("\\[!@#$?\\]+")).collect(Collectors.joining(""));
+                String nomeOfGene = Arrays.stream(genomeMatcher.group(1).split("[!@#$?]+")).collect(Collectors.joining(""));
                 int lenghtOfName = Integer.parseInt(genomeMatcher.group(2));
                 int countOfGenes = Integer.parseInt(genomeMatcher.group(3));
                 String nomeOfOrganism = String.valueOf(genomeMatcher.group(4));
                 if (nomeOfGene.length() == lenghtOfName){
-                    organisms.put(nomeOfOrganism, countOfGenes);
+                    if (!organisms.containsKey(nomeOfOrganism)){
+                        organisms.put(nomeOfOrganism, countOfGenes);
+                    } else {
+                        int currentSumGenes = organisms.get(nomeOfOrganism) + countOfGenes;
+                        organisms.put(nomeOfOrganism, currentSumGenes);
+                    }
                 }
             }
         }
