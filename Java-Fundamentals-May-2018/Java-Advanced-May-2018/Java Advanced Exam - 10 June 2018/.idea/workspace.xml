@@ -51,8 +51,8 @@
       <file leaf-file-name="Ranking.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/D04_Ranking/Ranking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+            <state relative-caret-position="130">
+              <caret line="24" column="48" selection-end-line="104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -478,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/D04_Ranking/Ranking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+        <state relative-caret-position="130">
+          <caret line="24" column="48" selection-end-line="104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
