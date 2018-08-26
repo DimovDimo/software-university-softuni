@@ -35,10 +35,10 @@ public class BitSnow {
 
     private static void printWonderLand(int[][] wonderland) {
         System.out.println(Arrays.stream(wonderland)
-         .map(arr -> Arrays.stream(arr).mapToObj(String::valueOf)
-                .collect(Collectors.joining("")))
-            .map(str -> Integer.parseInt(str, 2) + "")
-            .collect(Collectors.joining(", ")));
+                .map(arr -> Arrays.stream(arr).mapToObj(String::valueOf)
+                        .collect(Collectors.joining("")))
+                .map(str -> Integer.parseInt(str, 2) + "")
+                .collect(Collectors.joining(", ")));
     }
 
     private static void snowing(int[][] wonderland) {
@@ -83,7 +83,7 @@ public class BitSnow {
     private static String makeString(int i) {
         StringBuilder output = new StringBuilder();
         for (int j = 0; j < i; j++) {
-             output.append("0");
+            output.append("0");
         }
 
         return output.toString();
