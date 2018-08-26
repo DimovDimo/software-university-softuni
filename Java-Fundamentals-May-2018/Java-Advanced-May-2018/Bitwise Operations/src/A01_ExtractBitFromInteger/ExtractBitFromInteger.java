@@ -1,10 +1,10 @@
-package A01_ModifyABit;
+package A01_ExtractBitFromInteger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ModifyABit {
+public class ExtractBitFromInteger {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
