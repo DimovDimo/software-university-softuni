@@ -12,91 +12,78 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="HeroInventory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseHero.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java">
+      <file leaf-file-name="MethodInterceptorFilter.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/cglib/MethodInterceptorFilter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1474">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="237">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/Recipe.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectMethodsGuru.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/util/ObjectMethodsGuru.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroInventoryTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="150" column="36" selection-start-line="150" selection-start-column="36" selection-end-line="150" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#1712#1742#0" expanded="true" />
-                <element signature="e#1826#1827#0" expanded="true" />
-                <element signature="e#1845#1846#0" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-                <element signature="e#1953#1954#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Mockito.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/Mockito.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wizard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Wizard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Assassin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Assassin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/BaseItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="118">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#6188#6189#0" expanded="true" />
+                <element signature="e#6267#6268#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MockSettingsImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/MockSettingsImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreationSettings.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/settings/CreationSettings.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -104,40 +91,22 @@
       <file leaf-file-name="RecipeItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/RecipeItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="12" column="161" selection-start-line="12" selection-start-column="161" selection-end-line="12" selection-end-column="161" />
+            <state relative-caret-position="119">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseHero.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#1463#1464#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/CommonItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Barbarian.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Barbarian.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/Inventory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -148,21 +117,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java" />
         <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Barbarian.java" />
         <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Assassin.java" />
         <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Wizard.java" />
         <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/CommonItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/BaseItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/RecipeItem.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/io/InputReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/io/OutputWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/io/ConsoleInputReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/io/ConsoleOutputWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/BaseItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hell/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java" />
       </list>
     </option>
   </component>
@@ -184,6 +160,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -260,27 +238,59 @@
               <item name="examprephell" type="b2602c69:ProjectViewProjectNode" />
               <item name="Work" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hell" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="examprephell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="examprephell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="examprephell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="miscellaneous" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java-Advanced-May-2018/Java Advanced Retake Exam - 03 Jan 2018" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="hell.entities.miscellaneous" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hell.entities.miscellaneous.items" />
       <recent name="hell.entities.miscellaneous.heroes" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Soft\SoftUni\02.Software-University-SoftUni\Software-University-SoftUni\Java-Fundamentals-May-2018\Java-OOP-Advanced-July-2018\20.Exam Preparation II - Hell\Work\src\main\java\hell\io" />
       <recent name="D:\Soft\SoftUni\02.Software-University-SoftUni\Software-University-SoftUni\Java-Fundamentals-May-2018\Java-OOP-Advanced-July-2018\20.Exam Preparation II - Hell\Work\src\main\java" />
     </key>
   </component>
@@ -296,9 +306,112 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.HeroInventoryTest.addCommonItem">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hell.Main" />
+      <module name="Work" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hell.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="HeroInventoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hell.entities.miscellaneous.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hell.entities.miscellaneous" />
+      <option name="MAIN_CLASS_NAME" value="hell.entities.miscellaneous.HeroInventoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HeroInventoryTest.addCommonItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hell.entities.miscellaneous.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hell.entities.miscellaneous" />
+      <option name="MAIN_CLASS_NAME" value="hell.entities.miscellaneous.HeroInventoryTest" />
+      <option name="METHOD_NAME" value="addCommonItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HeroInventoryTest.addRecipeItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hell.entities.miscellaneous.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hell.entities.miscellaneous" />
+      <option name="MAIN_CLASS_NAME" value="hell.entities.miscellaneous.HeroInventoryTest" />
+      <option name="METHOD_NAME" value="addRecipeItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HeroInventoryTest.getTotalStrengthBonus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hell.entities.miscellaneous.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="hell.entities.miscellaneous" />
+      <option name="MAIN_CLASS_NAME" value="hell.entities.miscellaneous.HeroInventoryTest" />
+      <option name="METHOD_NAME" value="getTotalStrengthBonus" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -338,6 +451,22 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.HeroInventoryTest.getTotalStrengthBonus" />
+      <item itemvalue="JUnit.HeroInventoryTest" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.HeroInventoryTest.addRecipeItem" />
+      <item itemvalue="JUnit.HeroInventoryTest.addCommonItem" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HeroInventoryTest.addCommonItem" />
+        <item itemvalue="JUnit.HeroInventoryTest.addRecipeItem" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.HeroInventoryTest" />
+        <item itemvalue="JUnit.HeroInventoryTest.getTotalStrengthBonus" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -352,41 +481,317 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="HeroInventoryTest_getTotalStrengthBonus - 2018.08.24 at 11h 12m 55s.xml">
+      <configuration name="HeroInventoryTest.getTotalStrengthBonus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_getTotalStrengthBonus - 2018.08.24 at 11h 22m 19s.xml">
+      <configuration name="HeroInventoryTest.getTotalStrengthBonus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_getTotalStrengthBonus - 2018.08.24 at 11h 28m 48s.xml">
+      <configuration name="HeroInventoryTest.getTotalStrengthBonus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest - 2018.08.24 at 11h 35m 52s.xml">
+      <configuration name="HeroInventoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_addRecipeItem - 2018.08.28 at 17h 26m 06s.xml">
+      <configuration name="HeroInventoryTest.addRecipeItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_addRecipeItem - 2018.08.28 at 17h 35m 44s.xml">
+      <configuration name="HeroInventoryTest.addRecipeItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_addRecipeItem - 2018.08.28 at 17h 38m 41s.xml">
+      <configuration name="HeroInventoryTest.addRecipeItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_addCommonItem - 2018.08.28 at 17h 38m 47s.xml">
+      <configuration name="HeroInventoryTest.addCommonItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeroInventoryTest_addRecipeItem - 2018.08.28 at 19h 50m 46s.xml">
+      <configuration name="HeroInventoryTest.addRecipeItem" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="728" y="8" width="804" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30759493" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32871014" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30253166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994452" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32871014" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/hell/Main.java</url>
+          <line>83</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java</url>
+          <line>145</line>
+          <properties class="hell.entities.miscellaneous.HeroInventoryTest" method="addRecipeItem">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/ConsoleInputReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/ConsoleOutputWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Assassin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Barbarian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Wizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/OutputWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="87" column="46" lean-forward="true" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/ConsoleInputReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/ConsoleOutputWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/OutputWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Wizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Assassin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/BaseItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/RecipeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="161" selection-start-line="12" selection-start-column="161" selection-end-line="12" selection-end-column="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/CommonItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Barbarian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/ItemCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -401,27 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Wizard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Barbarian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/CommonItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -429,77 +813,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/InputReader.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/OutputWriter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/OutputWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Assassin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Barbarian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/Wizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/ConsoleOutputWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/io/ConsoleInputReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/BaseItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/RecipeItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="12" column="161" selection-start-line="12" selection-start-column="161" selection-end-line="12" selection-end-column="161" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="422">
+          <caret line="79" column="79" selection-start-line="79" selection-start-column="79" selection-end-line="79" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/heroes/BaseHero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1474">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="280">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#1712#1742#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/settings/CreationSettings.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="135">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/MockSettingsImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/Mockito.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#6267#6268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/util/ObjectMethodsGuru.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/items/RecipeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/entities/miscellaneous/HeroInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hell/interfaces/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/cglib/MethodInterceptorFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hell/entities/miscellaneous/HeroInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="150" column="36" selection-start-line="150" selection-start-column="36" selection-end-line="150" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

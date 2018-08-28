@@ -77,14 +77,19 @@ public abstract class BaseHero implements Hero {
 
     @Override
     @SuppressWarnings("unchecked")
-    public Collection<Item> getItems() throws IllegalAccessException {
+    public Collection<Item> getItems()  {
         Collection<Item> items = null;
         Field[] inventoryFields = this.inventory.getClass().getDeclaredFields();
 
         for (Field inventoryField : inventoryFields) {
             if (inventoryField.isAnnotationPresent(ItemCollection.class)){
                 inventoryField.setAccessible(true);
-                Map<String, Item> itemMap = (Map<String, Item>) inventoryField.get(this.inventory);
+                Map<String, Item> itemMap = null;
+                try {
+                    itemMap = (Map<String, Item>) inventoryField.get(this.inventory);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
                 items = itemMap.values();
             }
         }
@@ -99,5 +104,32 @@ public abstract class BaseHero implements Hero {
     @Override
     public void addRecipe(Recipe recipe) {
         this.inventory.addRecipeItem(recipe);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder hero = new StringBuilder();
+
+        String items = this.getItems().size() == 0 ?
+                " None" :
+                System.lineSeparator() + this.getItems()
+                .stream()
+                .map(Item::toString)
+                .collect(Collectors.joining(""));
+
+        hero
+                .append(String.format("Hero: %s, Class: %s", this.name, this.getClass().getSimpleName()))
+                .append(System.lineSeparator())
+                .append(String.format("HitPoints: %d, Damage: %d", this.getHitPoints(), this.getDamage()))
+                .append(System.lineSeparator())
+                .append(String.format("Strength: %d", this.getStrength()))
+                .append(System.lineSeparator())
+                .append(String.format("Agility: %d", this.getAgility()))
+                .append(System.lineSeparator())
+                .append(String.format("Intelligence: %d", this.getIntelligence()))
+                .append(System.lineSeparator())
+                .append(String.format("Items:%s", items));
+
+        return hero.toString();
     }
 }
