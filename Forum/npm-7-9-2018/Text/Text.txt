@@ -15,3 +15,15 @@ Link: https://softuni.bg/forum/22070/kak-da-postavya-npm-na-webstorm-pod-ubuntu
 С уважение,
 Димо Димов
 студент в softuni.bg
+
+=====================================================
+
+Здравей VasilKotsev,
+
+Поставих /usr/share/npm и то тръгна, но се появи друг проблем.
+Когато се създава променлива WebStorm не ми дава в "use strict" да използвам "let".
+
+Аз потърсих в интернет и махнах "use strict" от Inspections и Live Templates.
+
+Проблема с "let" все още си стои.
+Някаква идея как да бъде решен?
