@@ -8,3 +8,14 @@ function getFibonator() {
         return currentValueOfNum2;
     }
 }
+
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
+console.log(getFibonator());
