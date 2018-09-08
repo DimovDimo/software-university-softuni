@@ -28,7 +28,7 @@ function objectInheritance(input) {
                 name = tokens[1];
                 let output = [];
                 for (let key in cars) {
-                    output.push(key + ':' + cars[key]);
+                    output.push(key + ':' + cars[name][key]);
                 }
 
                 console.log(output.join(','));
