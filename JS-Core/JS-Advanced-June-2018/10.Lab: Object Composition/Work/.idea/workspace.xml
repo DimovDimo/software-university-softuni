@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8948f43-f08c-43d0-8454-91fe6a3a2cef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../09.Advanced Functions/Information/.~lock.8. JS-Advanced-Functions-and-Objects-Exercises.docx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09.Advanced Functions/Work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../09.Advanced Functions/Work/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D04_ObjectInheritance.js" beforeDir="false" afterPath="$PROJECT_DIR$/D04_ObjectInheritance.js" afterDir="false" />
-    </list>
+    <list default="true" id="e8948f43-f08c-43d0-8454-91fe6a3a2cef" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,7 +15,7 @@
     <session id="1460361070">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.43" value="1" />
@@ -273,12 +269,12 @@
       <updated>1536321376820</updated>
       <workItem from="1536321378368" duration="5129000" />
       <workItem from="1536343993531" duration="1226000" />
-      <workItem from="1536395744568" duration="6195000" />
+      <workItem from="1536395744568" duration="6212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12550000" />
+    <option name="totallyTimeSpent" value="12567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="952" y="34" width="964" height="1000" extended-state="0" />
@@ -289,7 +285,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32912844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
