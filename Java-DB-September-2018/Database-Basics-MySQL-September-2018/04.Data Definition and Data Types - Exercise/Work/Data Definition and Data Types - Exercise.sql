@@ -74,3 +74,13 @@ VALUES (1, 'Person1', 'password'),
 (3, 'Person3', 'password'),
 (4, 'Person4', 'password'),
 (5, 'Person5', 'password');
+
+#08. Change Primary Key 
+ALTER TABLE users
+MODIFY COLUMN id INT(11);
+
+ALTER TABLE users
+DROP PRIMARY KEY;
+
+ALTER TABLE users
+ADD PRIMARY KEY(id, username);
