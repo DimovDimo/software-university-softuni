@@ -38,3 +38,22 @@ TRUNCATE TABLE minions;
 #05. Drop All Tables 
 DROP TABLE minions;
 DROP TABLE towns;
+
+#06. Create Table People 
+CREATE TABLE people(
+id INT(11) PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
+name VARCHAR(200) NOT NULL,
+picture MEDIUMBLOB,
+height DOUBLE(10,2),
+weight DOUBLE(10,2),
+gender CHAR(1) NOT NULL,
+birthdate DATE NOT NULL,
+biography TEXT
+);
+
+INSERT INTO people(id,name,gender,birthdate)
+VALUES (1, 'Person1', 'm', '2000-01-01'),
+(2, 'Person2', 'f', '2000-01-01'),
+(3, 'Person3', 'f', '2001-01-01'),
+(4, 'Person4', 'm', '2002-01-01'),
+(5, 'Person5', 'm', '2005-01-01');
