@@ -84,3 +84,10 @@ DROP PRIMARY KEY;
 
 ALTER TABLE users
 ADD PRIMARY KEY(id, username);
+
+#09. Set Default Value of a Field 
+ALTER TABLE users
+ALTER COLUMN last_login_time DROP DEFAULT;
+
+ALTER TABLE users
+MODIFY COLUMN last_login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
