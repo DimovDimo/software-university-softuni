@@ -34,3 +34,7 @@ VALUES (1, 'Kevin', 22, 1), (2, 'Bob', 15, 3),
 
 #04. Truncate Table Minions 
 TRUNCATE TABLE minions;
+
+#05. Drop All Tables 
+DROP TABLE minions;
+DROP TABLE towns;
