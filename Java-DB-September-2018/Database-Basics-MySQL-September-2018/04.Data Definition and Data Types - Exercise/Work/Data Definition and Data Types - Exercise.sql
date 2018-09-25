@@ -57,3 +57,20 @@ VALUES (1, 'Person1', 'm', '2000-01-01'),
 (3, 'Person3', 'f', '2001-01-01'),
 (4, 'Person4', 'm', '2002-01-01'),
 (5, 'Person5', 'm', '2005-01-01');
+
+#07. Create Table Users 
+CREATE TABLE users(
+id INT(22) PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT,
+username  VARCHAR(30) UNIQUE NOT NULL,
+password  VARCHAR(26) NOT NULL,
+profile_picture BLOB,
+last_login_time DATETIME,
+is_deleted BOOLEAN
+);
+
+INSERT INTO users(id,username,password)
+VALUES (1, 'Person1', 'password'),
+(2, 'Person2', 'password'),
+(3, 'Person3', 'password'),
+(4, 'Person4', 'password'),
+(5, 'Person5', 'password');
