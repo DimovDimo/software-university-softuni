@@ -1,6 +1,5 @@
 let expect = require('chai').expect;
 
-
 function isOddOrEven(string) {
     if (typeof(string) !== 'string') {
         return undefined;
