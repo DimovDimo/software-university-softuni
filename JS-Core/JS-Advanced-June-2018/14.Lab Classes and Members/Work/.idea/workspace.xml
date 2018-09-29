@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88a6c068-3cf5-4ec4-83ea-3cc429d5ace3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../13.Unit Testing with Mocha/Work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../13.Unit Testing with Mocha/Work/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="88a6c068-3cf5-4ec4-83ea-3cc429d5ace3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,22 +24,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="277" />
+          <entry key="js" value="360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="277" />
+          <entry key="JavaScript" value="360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="3" />
+          <entry key="js" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -76,11 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/04. Circle.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="10" column="24" selection-end-line="18" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/05. Point Distance.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="1" lean-forward="true" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -104,6 +110,7 @@
         <option value="$PROJECT_DIR$/02. Person Class.js" />
         <option value="$PROJECT_DIR$/03. Get Persons.js" />
         <option value="$PROJECT_DIR$/04. Circle.js" />
+        <option value="$PROJECT_DIR$/05. Point Distance.js" />
       </list>
     </option>
   </component>
@@ -169,12 +176,12 @@
       <updated>1538141083112</updated>
       <workItem from="1538141085653" duration="1813000" />
       <workItem from="1538220832860" duration="2000" />
-      <workItem from="1538220874871" duration="1631000" />
+      <workItem from="1538220874871" duration="1835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3446000" />
+    <option name="totallyTimeSpent" value="3650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="752" y="0" width="776" height="832" extended-state="0" />
@@ -231,6 +238,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="24" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05. Point Distance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="1" lean-forward="true" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
