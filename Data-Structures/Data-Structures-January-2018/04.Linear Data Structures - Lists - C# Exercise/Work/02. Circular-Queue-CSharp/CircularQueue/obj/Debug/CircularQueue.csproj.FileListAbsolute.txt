@@ -1,0 +1,6 @@
+C:\Main\Software-University-SoftUni\Data-Structures\Data-Structures-January-2018\04.Linear Data Structures - Lists - C# Exercise\Work\02. Circular-Queue-CSharp\CircularQueue\bin\Debug\CircularQueue.exe
+C:\Main\Software-University-SoftUni\Data-Structures\Data-Structures-January-2018\04.Linear Data Structures - Lists - C# Exercise\Work\02. Circular-Queue-CSharp\CircularQueue\bin\Debug\CircularQueue.pdb
+C:\Main\Software-University-SoftUni\Data-Structures\Data-Structures-January-2018\04.Linear Data Structures - Lists - C# Exercise\Work\02. Circular-Queue-CSharp\CircularQueue\obj\Debug\CircularQueue.csprojAssemblyReference.cache
+C:\Main\Software-University-SoftUni\Data-Structures\Data-Structures-January-2018\04.Linear Data Structures - Lists - C# Exercise\Work\02. Circular-Queue-CSharp\CircularQueue\obj\Debug\CircularQueue.csproj.CoreCompileInputs.cache
+C:\Main\Software-University-SoftUni\Data-Structures\Data-Structures-January-2018\04.Linear Data Structures - Lists - C# Exercise\Work\02. Circular-Queue-CSharp\CircularQueue\obj\Debug\CircularQueue.exe
+C:\Main\Software-University-SoftUni\Data-Structures\Data-Structures-January-2018\04.Linear Data Structures - Lists - C# Exercise\Work\02. Circular-Queue-CSharp\CircularQueue\obj\Debug\CircularQueue.pdb
