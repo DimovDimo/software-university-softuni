@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Sum and Average", "ListsExe\01. Sum and Average.csproj", "{9D2A788D-AE3C-4DF9-A374-3958F8D4434D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Sort", "02.Sort\02.Sort.csproj", "{5BB6149D-A63C-45CC-B3D1-502F55789583}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D2A788D-AE3C-4DF9-A374-3958F8D4434D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2A788D-AE3C-4DF9-A374-3958F8D4434D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2A788D-AE3C-4DF9-A374-3958F8D4434D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2A788D-AE3C-4DF9-A374-3958F8D4434D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB6149D-A63C-45CC-B3D1-502F55789583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB6149D-A63C-45CC-B3D1-502F55789583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB6149D-A63C-45CC-B3D1-502F55789583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB6149D-A63C-45CC-B3D1-502F55789583}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1478EDD6-45B3-453C-878C-403879E013DF}
+	EndGlobalSection
+EndGlobal
