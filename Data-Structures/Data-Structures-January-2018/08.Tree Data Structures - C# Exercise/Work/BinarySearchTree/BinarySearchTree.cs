@@ -55,6 +55,8 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
             node.Right = this.Insert(element, node.Right);
         }
 
+        node.Count = 1 + this.Count(node.Left) + this.Count(node.Right);
+
         return node;
     }
 
@@ -168,12 +170,41 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
 
     public void DeleteMax()
     {
-        throw new NotImplementedException();
+        this.root = this.DeleteMax(this.root);
+    }
+
+    private Node DeleteMax(Node node)
+    {
+        if (node == null)
+        {
+            return node.Left;
+        }
+
+        if (node.Right != null)
+        {
+            node.Right = this.DeleteMax(node.Right);
+        }
+        else
+        {
+            return node.Left;
+        }
+
+        return node;
     }
 
     public int Count()
     {
-        throw new NotImplementedException();
+        return this.Count(this.root);
+    }
+
+    private int Count(Node node)
+    {
+        if (node == null)
+        {
+            return 0;
+        }
+
+        return node.Count;
     }
 
     public int Rank(T element)
@@ -206,6 +237,8 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T:IComparable
         public T Value { get; }
         public Node Left { get; set; }
         public Node Right { get; set; }
+
+        public int Count { get; set; }
     }
 }
 
@@ -227,6 +260,9 @@ public class Launcher
         bst.Insert(45);
 
         bst.EachInOrder(Console.WriteLine);
-        
+
+        bst.DeleteMax();
+
+        bst.EachInOrder(Console.WriteLine);
     }
 }
