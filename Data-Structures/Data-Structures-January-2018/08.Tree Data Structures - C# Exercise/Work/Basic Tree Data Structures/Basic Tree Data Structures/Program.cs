@@ -42,7 +42,8 @@ class Program
 
         //01. Root Node ___ root.PrintRootNode(tree);
         //02. Print Tree __ root.Print();
-
+        //03. Leaf Nodes __ root.PrintLeafNodes(tree);
+        //04. Middle Nodes _ root.PrintMiddleNodes(tree);
     }
 
     public class Tree<T>
@@ -78,13 +79,28 @@ class Program
             Console.WriteLine($"Root node: {root.Value}");
         }
 
-        public void LeafNodes()
+        public void PrintLeafNodes(Dictionary<int, Tree<int>> tree)
         {
-            Console.WriteLine($"{new string(' ', indent)}{this.Value}");
-            foreach (var child in this.Children)
-            {
-                child.Print(indent + 2);
-            }
+            var nodes = tree.Values
+                .Where(x => x.Parent != null 
+                    && x.Children.Count == 0)
+                .Select(x => x.Value)
+                .OrderBy(x => x)
+                .ToList();
+
+            Console.WriteLine("Leaf nodes: " + string.Join(" ", nodes));
+        }
+
+        public void PrintMiddleNodes(Dictionary<int, Tree<int>> tree)
+        {
+            var nodes = tree.Values
+                .Where(x => x.Parent != null
+                    && x.Children.Count != 0)
+                .Select(x => x.Value)
+                .OrderBy(x => x)
+                .ToList();
+
+            Console.WriteLine("Middle nodes: " + string.Join(" ", nodes));
         }
     }
 }
