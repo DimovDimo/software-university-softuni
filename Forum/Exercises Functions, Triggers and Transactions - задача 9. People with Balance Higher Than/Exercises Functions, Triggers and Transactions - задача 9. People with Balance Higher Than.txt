@@ -1,0 +1,41 @@
+Здравей abetterman,
+
+В задачите са поставени моменти, за които да внимаваме.
+
+При тази задача, изречението на което да обърним внимание е "The result should be sorted by first_name then by last_name alphabetically and account id ascending".
+
+Посочено е да използваме таблицата accounts, защото е написано "account id". 
+
+В базата от данни bank, има две таблици accounts и account_holders. Всяка от които има колона id.
+
+Link: https://softuni.bg/forum/22650/exercises-functions-triggers-and-transactions-zadacha-9-people-with-balance-higher-than
+
+Нужно е да изпозваш accounts.id или a.id при сортирането.
+
+Също така заплатите са DOUBLE, а ти си използвал INT(11).
+
+Още ено нещо, в тази задача първо се сортира по accounts.id после по first_name и накрая по last_name.
+
+В твоя случай, кода ти ще бъде:
+
+CREATE PROCEDURE usp_get_holders_with_balance_higher_than(money_number DOUBLE)
+BEGIN
+SELECT first_name,last_name
+FROM account_holders ah
+JOIN accounts a
+ON a.account_holder_id=ah.id
+GROUP BY first_name
+HAVING SUM(a.balance) > money_number
+ORDER BY a.id,first_name,last_name;
+END 
+Така написания код минава на 100/100 в judge.softuni.bg
+
+Можеш да видиш моето решение: 
+
+https://github.com/DimovDimo/Software-University-SoftUni/blob/master/Java-DB-September-2018/Database-Basics-MySQL-September-2018/16%2CDatabase%20Programmability%20-%20Exercise/Work/PART%20II%20%E2%80%93%20Queries%20for%20Bank%20Database/09.%20People%20with%20Balance%20Higher%20Than.sql
+
+С уважение,
+
+Димо Димов
+
+студент в softuni.bg
