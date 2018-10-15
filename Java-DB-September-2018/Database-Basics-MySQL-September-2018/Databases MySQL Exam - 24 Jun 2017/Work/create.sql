@@ -1,0 +1,3 @@
+CREATE DATABASE databases_mysql_exam_24_jun_2017;
+
+USE databases_mysql_exam_24_jun_2017;
