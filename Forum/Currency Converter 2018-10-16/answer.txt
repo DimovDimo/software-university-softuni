@@ -1,0 +1,52 @@
+Link: https://softuni.bg/forum/22682/currency-converter
+
+Здравей Yani81,
+
+Твоето решение е добро, но предполагам, че многото if-else са объркващи.
+
+Прелагам ти решение с switch-case.
+
+Първо - правим константите от които се нуждаем.
+
+const double usd = 1.79549;
+const double eur = 1.95583;
+const double gbp = 2.53405;
+Второ - четем входните данни.
+
+double money = double.Parse(Console.ReadLine());
+string firstCurrency = Console.ReadLine();
+string secondCurrency = Console.ReadLine();
+Трето - превръщаме всички влути в една. В този случай, български лев. Ако валутата е български лев, няма да я конвертираме на тази стъпка.
+
+switch (firstCurrency)
+{
+    case "USD": money = money * usd; break;
+    case "EUR": money = money * eur; break;
+    case "GBP": money = money * gbp; break;
+}
+Четвърто - превръщаме българските левове в посочената втора валута.
+
+switch (secondCurrency)
+{
+    case "USD": money = money / usd; break;
+    case "EUR": money = money / eur; break;
+    case "GBP": money = money / gbp; break;
+}
+Пето - принтираме резултата.
+
+Console.WriteLine($"{money:F2} {secondCurrency}");
+Нека да обърнем внимание на нещо важно. В тази задача има само 4 валути (BGN, USD, EUR, GBR), но можеха да са повече.
+
+Подобни задачи за конвертиране на валити се решават, като се превърне в една базова валута. След това, от базовата валута се изчислява търсената.
+
+Решаването с if-else е добро, но ако имахме повече валути, щеше да е по-добре да използваме switch-case.
+
+Пълното решение дава 100/100 в judge.softuni.bg, можеш да го видиш на този линк https://github.com/DimovDimo/Software-University-SoftUni/blob/master/Forum/Currency%20Converter%202018-10-16/Forum%20Currency%20Converter/Forum%20Currency%20Converter/Currency%20Converter.cs
+
+Надявам се, че решението и обяснението ще са ти полезни.
+
+С уважение,
+
+Димо Димов
+
+студент в softuni.bg
