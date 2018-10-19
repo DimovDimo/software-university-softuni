@@ -1,0 +1,10 @@
+Link: https://softuni.bg/forum/22651/exercises-functions-triggers-and-transactions-zadacha-12-deposit-money
+
+Моето решение получава 60/100 :https://github.com/DimovDimo/Software-University-SoftUni/blob/master/Java-DB-September-2018/Database-Basics-MySQL-September-2018/16%2CDatabase%20Programmability%20-%20Exercise/Work/PART%20II%20%E2%80%93%20Queries%20for%20Bank%20Database/12.%20Deposit%20Money.sql
+
+Не можах да изкарам 100/100
+
+За да вземем количеството знаци след запетаята, можем да използваме:
+
+IF(money_amount = floor(money_amount), 0, char_length(money_amount - floor(money_amount))- 2)
+Проверяваме дали числото е цяло. Ако да, връщаме 0 знака. В друг случай взимаме дължината на стринга, който се получава от разликата на числото с неговата закръглена надолу стойност. После вадим 2, защото всеки подобен стринг започва с '0.', а това има дължина 2. Резултата е количеството знаци след запетаята.
