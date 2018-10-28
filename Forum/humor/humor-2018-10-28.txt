@@ -1,0 +1,16 @@
+Link: https://softuni.bg/forum/38/humor-vicove-i-smeshki-za-programisti
+
+Software Development Cycle
+Programmer produces code he believes is bug-free.
+Product is tested. 20 bugs are found.
+Programmer fixes 10 of the bugs and explains to the testing department that the other 10 aren't really bugs.
+Testing department finds that five of the fixes didn't work and discovers 15 new bugs.
+Repeat three times steps 3 and 4.
+Due to marketing pressure and an extremely premature product announcement based on overly-optimistic programming schedule, the product is released.
+Users find 137 new bugs.
+Original programmer, having cashed his royalty check, is nowhere to be found.
+Newly-assembled programming team fixes almost all of the 137 bugs, but introduce 456 new ones.
+Original programmer sends underpaid testing department a postcard from Fiji. Entire testing department quits.
+Company is bought in a hostile takeover by competitor using profits from their latest release, which had 783 bugs.
+New CEO is brought in by board of directors. He hires a programmer to redo program from scratch.
+Programmer produces code he believes is bug-free...
