@@ -19,7 +19,8 @@ public class Engine implements Runnable {
             //this.getVillainsNames();
             //this.getMinionNames();
             //this.addMinion();
-            this.changeTownNamesCasing();
+            //this.changeTownNamesCasing();
+            this.printAllMinionNames();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -301,5 +302,47 @@ public class Engine implements Runnable {
         statement.execute();
     }
 
-    
+    /**
+     * 7. Print All Minion Names
+     * Write a program that prints all minion names from the minions table in order first record, last record, first + 1, last –
+     * 1, first + 2, last – 2… first + n, last – n.
+     * @throws SQLException
+     */
+    private void printAllMinionNames() throws SQLException{
+        List<String> names = this.getAllMinionNames();
+        names = this.sortListByFirstLastNotation(names);
+        assert names != null;
+        System.out.println(String.join("\n\r",names));
+    }
+
+    private List<String> sortListByFirstLastNotation(List<String> input) {
+        List<String> result = new ArrayList<>();
+        while (!input.isEmpty()){
+            result.add(input.get(0));
+            input.remove(0);
+            if (!input.isEmpty()){
+                result.add(input.get(getLastIndexOfList(input)));
+                input.remove(getLastIndexOfList(input));
+            }
+        }
+
+        return result;
+    }
+
+    private int getLastIndexOfList(List<String> input) {
+        return input.size() - 1;
+    }
+
+    private List<String> getAllMinionNames() throws SQLException {
+        String query = "SELECT name FROM minions ORDER BY name";
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        List<String> result = new ArrayList<>();
+        while (resultSet.next()){
+            result.add(resultSet.getString("name"));
+        }
+
+        return result;
+    }
 }
