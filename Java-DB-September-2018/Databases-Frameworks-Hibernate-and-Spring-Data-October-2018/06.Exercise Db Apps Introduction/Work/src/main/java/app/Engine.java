@@ -20,7 +20,8 @@ public class Engine implements Runnable {
             //this.getMinionNames();
             //this.addMinion();
             //this.changeTownNamesCasing();
-            this.printAllMinionNames();
+            //this.printAllMinionNames();
+            this.increaseMinionsAge();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -344,5 +345,98 @@ public class Engine implements Runnable {
         }
 
         return result;
+    }
+
+    /**
+     * 8. Increase Minions Age
+     * Read from the console minion IDs, separated by space. Increment the age of those minions by 1 and make their
+     * names title case. Finally, print the names and the ages of all minions that are in the database. See the examples
+     * below.
+     * @throws SQLException
+     */
+    private void increaseMinionsAge() throws SQLException{
+        String minionsIds = this.readMinionsIds();
+        this.increaseMinionsIdsAge(minionsIds);
+        this.setMinionsNamesTitleCase(minionsIds);
+        this.printAllMinions();
+        connection.close();
+    }
+
+    private void printAllMinions() throws SQLException {
+        String query = "SELECT name, age FROM minions";
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while (resultSet.next()){
+            String name = resultSet.getString("name");
+            int age = resultSet.getInt("age");
+            System.out.printf("%s %d%n",
+                    name, age);
+        }
+    }
+
+    private void setMinionsNamesTitleCase(String minionsIds) throws SQLException {
+        //this.createProperFunction();
+        String properQuery = String.format("UPDATE minions SET name = proper(name) WHERE id IN(%s)",
+                minionsIds);
+        String ordinalQuery = String.format("UPDATE minions SET name = name WHERE id IN(%s)",
+                minionsIds);
+        PreparedStatement preparedStatement = this.connection.prepareStatement(ordinalQuery);
+        preparedStatement.execute();
+    }
+
+    private void createProperFunction() throws SQLException {
+        String query =
+                "DROP FUNCTION IF EXISTS proper;" +
+                "SET GLOBAL  log_bin_trust_function_creators=TRUE;" +
+                "DELIMITER $$ " +
+                "CREATE FUNCTION proper( str VARCHAR(128) )" +
+                "RETURNS VARCHAR(128)" +
+                "BEGIN" +
+                "DECLARE c CHAR(1);" +
+                "DECLARE s VARCHAR(128);" +
+                "DECLARE i INT DEFAULT 1;" +
+                "DECLARE bool INT DEFAULT 1;" +
+                "DECLARE punct CHAR(17) DEFAULT ' ()[]{},.-_!@;:?/';" +
+                "SET s = LCASE( str );" +
+                "WHILE i <= LENGTH( str ) DO   " +
+                "    BEGIN" +
+                "SET c = SUBSTRING( s, i, 1 );" +
+                "IF LOCATE( c, punct ) > 0 THEN" +
+                "SET bool = 1;" +
+                "ELSEIF bool=1 THEN" +
+                "BEGIN" +
+                "IF c >= 'a' AND c <= 'z' THEN" +
+                "BEGIN" +
+                "SET s = CONCAT(LEFT(s,i-1),UCASE(c),SUBSTRING(s,i+1));" +
+                "SET bool = 0;" +
+                "END;" +
+                "ELSEIF c >= '0' AND c <= '9' THEN" +
+                "SET bool = 0;" +
+                "END IF;" +
+                "END;" +
+                "END IF;" +
+                "SET i = i+1;" +
+                "END;" +
+                "END WHILE;" +
+                "RETURN s;" +
+                "END;" +
+                "$$" +
+                "DELIMITER ;";
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        preparedStatement.execute();
+    }
+
+    private void increaseMinionsIdsAge(String minionsIds) throws SQLException {
+        String query = String.format("UPDATE minions SET age = age + 1 WHERE id IN(%s)",
+                minionsIds);
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        preparedStatement.execute();
+
+    }
+
+    private String readMinionsIds() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine().replaceAll("\\s+", ", ");
     }
 }
