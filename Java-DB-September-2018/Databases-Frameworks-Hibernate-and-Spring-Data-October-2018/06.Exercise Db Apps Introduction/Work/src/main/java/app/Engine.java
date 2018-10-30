@@ -1,6 +1,8 @@
 package app;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Engine implements Runnable {
@@ -13,9 +15,11 @@ public class Engine implements Runnable {
 
     public void run() {
         try {
+            //WARING add soutf for problems
             //this.getVillainsNames();
             //this.getMinionNames();
-            this.addMinion();
+            //this.addMinion();
+            this.changeTownNamesCasing();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -224,4 +228,78 @@ public class Engine implements Runnable {
 
         statement.execute();
     }
+
+    /**
+     * 5. Change Town Names Casing
+     * Write a program that changes all town names to uppercase for a given country. Print the number of towns that
+     * were changed in the format provided in examples. On the next line print the names that were changed, separated
+     * by coma and a space.
+     * @throws SQLException
+     */
+    private void changeTownNamesCasing() throws SQLException{
+        this.removeSqlSafeUpdates();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input country name: ");
+        String country = scanner.nextLine();
+        if (this.getCountOfTownsByCountry(country) <= 0){
+            System.out.println("No town names were affected.");
+            return;
+        }
+
+        this.upperTownsNames(country);
+        this.printCountUpperedTownsNames(country);
+        this.printUpperedTownsNames(country);
+    }
+
+    private void printUpperedTownsNames(String country) throws SQLException {
+        String query = String.format("SELECT t.name FROM towns AS t WHERE t.country = '%s'",
+                country);
+        PreparedStatement preparedStatement = this.connection
+                .prepareStatement(query);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+        List<String> towns = new ArrayList<String>();
+        while (resultSet.next()){
+            towns.add(resultSet.getString("name"));
+        }
+
+        System.out.println(towns.toString());
+    }
+
+    private void printCountUpperedTownsNames(String country) throws SQLException {
+        int count = getCountOfTownsByCountry(country);
+        System.out.printf("%d town names were affected.%n",
+                count);
+    }
+
+    private int getCountOfTownsByCountry(String country) throws SQLException {
+        String query = String.format("SELECT COUNT(*) AS count FROM towns AS t WHERE t.country = '%s'",
+                country);
+        PreparedStatement preparedStatement = this.connection
+                .prepareStatement(query);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.next();
+        return resultSet.getInt("count");
+    }
+
+    private void upperTownsNames(String country) throws SQLException {
+        String query = String.format("UPDATE towns AS t SET t.name = UPPER(name) WHERE t.country = '%s'",
+                country);
+        PreparedStatement statement = this.connection
+                .prepareStatement(query);
+
+        statement.execute();
+    }
+
+    private void removeSqlSafeUpdates() throws SQLException {
+        String query = "SET SQL_SAFE_UPDATES=0";
+        PreparedStatement statement = this.connection
+                .prepareStatement(query);
+
+        statement.execute();
+    }
+
+    
 }
