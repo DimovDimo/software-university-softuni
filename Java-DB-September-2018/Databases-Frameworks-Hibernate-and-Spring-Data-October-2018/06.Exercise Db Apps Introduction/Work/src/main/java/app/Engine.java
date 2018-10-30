@@ -15,13 +15,26 @@ public class Engine implements Runnable {
 
     public void run() {
         try {
-            //WARING add soutf for problems
-            //this.getVillainsNames();
-            //this.getMinionNames();
-            //this.addMinion();
-            //this.changeTownNamesCasing();
-            //this.printAllMinionNames();
+            System.out.printf("%n Problem 2. Get Villains’ Names\n %n");
+            this.getVillainsNames();
+
+            System.out.printf("%n Problem 3. Get Minion Names %n");
+            this.getMinionNames();
+
+            System.out.printf("%n Problem 4. Add Minion %n");
+            this.addMinion();
+
+            System.out.printf("%n Problem 5. Change Town Names Casing %n");
+            this.changeTownNamesCasing();
+
+            System.out.printf("%n Problem 7. Print All Minion Names %n");
+            this.printAllMinionNames();
+
+            System.out.printf("%n Problem 8. Increase Minions Age\n %n");
             this.increaseMinionsAge();
+
+            System.out.printf("%n Problem 9. Increase Age Stored Procedure %n");
+            this.increaseAgeStoredProcedure();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -59,7 +72,7 @@ public class Engine implements Runnable {
                     resultSet.getInt("count_minions"));
         }
 
-        connection.close();
+        
     }
 
     /**
@@ -359,7 +372,7 @@ public class Engine implements Runnable {
         this.increaseMinionsIdsAge(minionsIds);
         this.setMinionsNamesTitleCase(minionsIds);
         this.printAllMinions();
-        connection.close();
+
     }
 
     private void printAllMinions() throws SQLException {
@@ -377,8 +390,8 @@ public class Engine implements Runnable {
 
     private void setMinionsNamesTitleCase(String minionsIds) throws SQLException {
         //this.createProperFunction();
-        String properQuery = String.format("UPDATE minions SET name = proper(name) WHERE id IN(%s)",
-                minionsIds);
+        //String properQuery = String.format("UPDATE minions SET name = proper(name) WHERE id IN(%s)",
+                //minionsIds);
         String ordinalQuery = String.format("UPDATE minions SET name = name WHERE id IN(%s)",
                 minionsIds);
         PreparedStatement preparedStatement = this.connection.prepareStatement(ordinalQuery);
@@ -436,7 +449,67 @@ public class Engine implements Runnable {
     }
 
     private String readMinionsIds() {
+        System.out.print("Input minions IDs: ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine().replaceAll("\\s+", ", ");
+    }
+
+    /**
+     * Create a stored procedure usp_get_older (directly in the database using MySQL Workbench or any other similar
+     * tool) that receives a minion_id and increases the minion’s years by 1. Write a program that uses that stored
+     * procedure to increase the age of a minion, whose id will be given as an input from the console. After that print the
+     * name and the age of that minion.
+     * @throws SQLException
+     */
+    private void increaseAgeStoredProcedure() throws SQLException{
+        //this.createUspGetOlder();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input minion Id: ");
+        int minionId = Integer.parseInt(scanner.nextLine());
+        this.callUspGetOlder(minionId);
+        connection.close();
+    }
+
+    private void callUspGetOlder(int minionId) throws SQLException {
+        String query = String.format("CALL usp_get_older(%d)", minionId);
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.next();
+        String name = resultSet.getString("name");
+        int age = resultSet.getInt("age");
+        System.out.printf("%s %d%n",
+                name, age);
+    }
+
+    private void createUspGetOlder() throws SQLException {
+        String query =
+                "DROP PROCEDURE IF EXISTS usp_get_older;\n" +
+                "\n" +
+                "DELIMITER $$\n" +
+                "CREATE PROCEDURE usp_get_older(minion_id INT(11))\n" +
+                "BEGIN\n" +
+                "\t\n" +
+                "    DECLARE exist_minion_id INT DEFAULT (SELECT id FROM minions WHERE id = minion_id);\n" +
+                "    \n" +
+                "\tSTART TRANSACTION;\n" +
+                "\tIF(exist_minion_id IS NULL) THEN\n" +
+                "\t\tSIGNAL SQLSTATE '45000' \n" +
+                "\t\t\tSET MESSAGE_TEXT = 'Minion Id does not exist!';\n" +
+                "\t\tROLLBACK;\n" +
+                "    ELSE   \n" +
+                "        UPDATE minions\n" +
+                "        SET age = age + 1\n" +
+                "        WHERE id = minion_id;\n" +
+                "        \n" +
+                "        SELECT name, age\n" +
+                "        FROM minions\n" +
+                "        WHERE id = minion_id;\n" +
+                "        \n" +
+                "        COMMIT;\n" +
+                "    END IF;\n" +
+                "END $$\n" +
+                "DELIMITER ;";
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        preparedStatement.execute();
     }
 }
