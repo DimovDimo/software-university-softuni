@@ -137,10 +137,27 @@ public class Engine implements Runnable {
         }
 
         if (!this.checksIfEntityExist(villianName, "villains")){
-            this.insertVillain(villianName + "cccc333");
+            this.insertVillain(villianName);
         }
 
+        int minionTownId = this.getEntityId(minionTown, "towns");
+        this.insertMinion(minionName, minionAge, minionTownId);
+        this.insertIntoMinionsVillains(minionName, villianName);
 
+        System.out.printf("Successfully added %s to be minion of %s.%n",
+                minionName, villianName);
+    }
+
+    private void insertIntoMinionsVillains(String minionName, String villianName) throws SQLException {
+        int minionId = this.getEntityId(minionName, "minions");
+        int villianId = this.getEntityId(villianName, "villains");
+
+        String query = String.format("INSERT INTO minions_villains(minion_id, villain_id) VALUES (%d, %d)",
+                minionId, villianId);
+        PreparedStatement statement = this.connection
+                .prepareStatement(query);
+
+        statement.execute();
     }
 
     private void insertVillain(String villianName) throws SQLException {
@@ -178,7 +195,11 @@ public class Engine implements Runnable {
 
         ResultSet resultSet = preparedStatement.executeQuery();
 
-        return resultSet.next();
+        if (resultSet.next()){
+            return true;
+        }
+
+        return false;
     }
 
     private int getEntityId(String name, String tableName) throws SQLException {
@@ -191,7 +212,16 @@ public class Engine implements Runnable {
         preparedStatement.setString(1, name);
 
         ResultSet resultSet = preparedStatement.executeQuery();
-
+        resultSet.next();
         return resultSet.getInt("id");
+    }
+
+    private void insertMinion(String minionName, int minionAge, int minionTownId) throws SQLException{
+        String query = String.format("INSERT INTO minions(name, age, town_id) VALUES ('%s', %d, %d)",
+                minionName, minionAge, minionTownId);
+        PreparedStatement statement = this.connection
+                .prepareStatement(query);
+
+        statement.execute();
     }
 }
