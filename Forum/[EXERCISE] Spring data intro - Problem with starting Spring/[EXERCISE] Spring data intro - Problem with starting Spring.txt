@@ -1,0 +1,19 @@
+Link: https://softuni.bg/forum/23261/exercise-spring-data-intro-problem-with-starting-spring
+
+[EXERCISE] Spring data intro - Problem with starting Spring
+Когато се опитам да стартирам Spring, то ми дава следните два реда:
+
+2018-11-15 17:38:08.936  INFO 9076 --- [           main] app.Application                          : No active profile set, falling back to default profiles: default
+Thu Nov 15 17:38:12 EET 2018 WARN: Establishing SSL connection without server''s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ require...
+2018-11-15 17:38:13.180 ERROR 9076 --- [           main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+Гледах на видеото от упражнението, че No active profile set, falling back to default profiles: default се появява и на водещия, но после на следващия ред Spring дава Refreshing... , а при мен дава Unable to create initial connections of pool.
+
+Грешката, която ми изписва е com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server.
+
+Аз използвам IntelliJ IDEA Community, и виждам DB през MySQL Workbench.
+
+Нужно ли е да взема IntelliJ IDEA Ultimate или този проблем може да се реши и през Community
+
+Моя код е в github: https://github.com/DimovDimo/Software-University-SoftUni/tree/master/Java-DB-September-2018/Databases-Frameworks-Hibernate-and-Spring-Data-October-2018/14.Exercise%20Spring%20Data%20Intro
+
+Блаодаря, на всички, за отговорите.
