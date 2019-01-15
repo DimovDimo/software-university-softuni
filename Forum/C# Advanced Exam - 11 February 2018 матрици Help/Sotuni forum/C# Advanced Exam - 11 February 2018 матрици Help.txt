@@ -1,0 +1,8 @@
+Link: https://softuni.bg/forum/25205/csharp-advanced-exam-11-february-2018-matrici-help
+
+Answer:
+Здравей, peter1998
+
+Надявам се този код да ти помогне. https://pastebin.com/YfmKkNWB
+
+Успех!

@@ -1,0 +1,134 @@
+using System;
+ 
+public class p02Sneaking
+{
+    public static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        char[][] room = new char[n][];
+        int sRow = -1;
+        int sCol = -1;
+        int nRow = -1;
+        int nCol = -1;
+ 
+        for (int row = 0; row < n; row++)
+        {
+            room[row] = Console.ReadLine().ToCharArray();
+            for (int col = 0; col < room[row].Length; col++)
+            {
+                if (room[row][col] == 'S')
+                {
+                    sCol = col;
+                    sRow = row;
+                    room[row][col] = '.';
+                }
+                else if (room[row][col] == 'N')
+                {
+                    nRow = row;
+                    nCol = col;
+                }
+            }
+        }
+ 
+        string newDirections = Console.ReadLine();
+ 
+        foreach (char direction in newDirections)
+        {
+            bool[,] move = new bool[n, room[0].Length];
+ 
+            for (int row = 0; row < n; row++)
+            {
+                if (row == nRow)
+                {
+                    continue;
+                }
+ 
+                for (int col = 0; col < room[row].Length; col++)
+                {
+ 
+                    if (move[row, col])
+                    {
+                        continue;
+                    }
+                    if (room[row][col] == 'b')
+                    {
+                        if (col == room[row].Length - 1)
+                        {
+                            room[row][col] = 'd';
+                        }
+                        else
+                        {
+                            room[row][col] = '.';
+                            room[row][col + 1] = 'b';
+                            move[row, col + 1] = true;
+                        }
+                    }
+                    else if (room[row][col] == 'd')
+                    {
+                        if (col == 0)
+                        {
+                            room[row][col] = 'b';
+                        }
+                        else
+                        {
+                            room[row][col] = '.';
+                            room[row][col - 1] = 'd';
+                            move[row, col - 1] = true;
+                        }
+                    }
+ 
+                }
+            }
+ 
+            bool dead = false;
+            for (int col = 0; col < room[sRow].Length; col++)
+            {
+                if (room[sRow][col] == 'b' && sCol > col ||
+                    room[sRow][col] == 'd' && sCol < col)
+                {
+                    dead = true;
+                    break;
+                }
+            }
+ 
+            if (dead)
+            {
+                room[sRow][sCol] = 'X';
+                Console.WriteLine($"Sam died at {sRow}, {sCol}");
+                break;
+            }
+ 
+            if (direction == 'U')
+            {
+                sRow--;
+            }
+            else if (direction == 'D')
+            {
+                sRow++;
+            }
+            else if (direction == 'L')
+            {
+                sCol--;
+            }
+            else if (direction == 'R')
+            {
+                sCol++;
+            }
+ 
+            if (sRow == nRow)
+            {
+                room[nRow][nCol] = 'X';
+                room[sRow][sCol] = 'S';
+                Console.WriteLine("Nikoladze killed!");
+                break;
+            }
+ 
+            room[sRow][sCol] = '.';
+        }
+ 
+        for (int row = 0; row < n; row++)
+        {
+            Console.WriteLine(new string(room[row]));
+        }
+    }
+}
