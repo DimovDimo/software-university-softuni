@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link href="styles/p13contact-us-form.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Contact Us</h1>
+<form method="post">
+    <div>
+        <span>First Name:</span>
+        <input type="text" name="first_name" placeholder="First Name" required/>
+    </div>
+    <div>
+        <span>Last Name:</span>
+        <input type="text" name="last_name" placeholder="Last Name" required/>
+    </div>
+    <div>
+        <span>Email:</span>
+        <input type="email" name="email" placeholder="Email" required/>
+    </div>
+    <div>
+        <label for="town">Town:</label>
+        <select id="town" name="town">
+            <option value="1">Sofia</option>
+            <option value="2">Plovdiv</option>
+            <option value="3">Varna</option>
+        </select>
+    </div>
+    <input type="reset" value="Reset"/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
