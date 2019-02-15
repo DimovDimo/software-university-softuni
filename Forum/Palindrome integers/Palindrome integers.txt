@@ -1,0 +1,17 @@
+Link: https://softuni.bg/forum/25701/9-palindrome-integers
+
+Answer:
+Здравей, simasim
+
+Твоя код е написан вярно. Стринговете се обръщат и печатането е правилно.
+
+Причината да се печата false е, че string reversed е създен извън while цикъла и когато while цикъла се завърти повече от веднъж, към предишното съдържание на reversed се прибавя ново.
+
+Можеш да изчистиш reversed в края на while цикъла.
+
+//Before: reversed is not empty
+reversed = string.Empty;
+//After: reversed is empty
+Пълния код можеш да намериш на https://github.com/DimovDimo/Software-University-SoftUni/blob/master/Forum/Palindrome%20integers/C%23/Palindrome%20integers/Palindrome%20integers/Program.cs
+
+Надявам се отговора да е бил полезен.
