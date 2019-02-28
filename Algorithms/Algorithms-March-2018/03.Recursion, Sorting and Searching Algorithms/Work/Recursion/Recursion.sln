@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p04. Generating 01 Vectors"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p05. Generating Combinations", "p05. Generating Combinations\p05. Generating Combinations.csproj", "{21DB7973-00D2-4639-8A57-0807B498F6B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p06. 8 Queens Puzzle", "p06. 8 Queens Puzzle\p06. 8 Queens Puzzle.csproj", "{D55EC226-FF74-42A0-AC50-E2C6012D9425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p07. Paths in Labyrinth", "p07. Paths in Labyrinth\p07. Paths in Labyrinth.csproj", "{E74968CF-55C8-4DD2-B603-1A4A7BF306CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{21DB7973-00D2-4639-8A57-0807B498F6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21DB7973-00D2-4639-8A57-0807B498F6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21DB7973-00D2-4639-8A57-0807B498F6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55EC226-FF74-42A0-AC50-E2C6012D9425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55EC226-FF74-42A0-AC50-E2C6012D9425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55EC226-FF74-42A0-AC50-E2C6012D9425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55EC226-FF74-42A0-AC50-E2C6012D9425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74968CF-55C8-4DD2-B603-1A4A7BF306CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74968CF-55C8-4DD2-B603-1A4A7BF306CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74968CF-55C8-4DD2-B603-1A4A7BF306CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74968CF-55C8-4DD2-B603-1A4A7BF306CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
