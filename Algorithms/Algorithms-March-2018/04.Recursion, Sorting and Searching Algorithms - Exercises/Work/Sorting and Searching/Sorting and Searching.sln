@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p02. Searching", "Sorting and Searching\p02. Searching.csproj", "{002F1C82-D5D7-47DE-BD00-41CC0D9E4FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p03. Inversion Count", "p03. Inversion Count\p03. Inversion Count.csproj", "{5A7F6C2F-2AB0-47C4-A08C-C2222E2AF54D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{002F1C82-D5D7-47DE-BD00-41CC0D9E4FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002F1C82-D5D7-47DE-BD00-41CC0D9E4FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002F1C82-D5D7-47DE-BD00-41CC0D9E4FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002F1C82-D5D7-47DE-BD00-41CC0D9E4FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7F6C2F-2AB0-47C4-A08C-C2222E2AF54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7F6C2F-2AB0-47C4-A08C-C2222E2AF54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7F6C2F-2AB0-47C4-A08C-C2222E2AF54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7F6C2F-2AB0-47C4-A08C-C2222E2AF54D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4118918-1EAD-4D03-AC27-A883DB09644C}
+	EndGlobalSection
+EndGlobal
