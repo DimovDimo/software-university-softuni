@@ -1,0 +1,11 @@
+Link: https://softuni.bg/forum/26059/java-mvc-spring-unit-testing-problem-pri-startirane-na-code-coverage
+
+Answer:
+Здравей, did0sh
+
+Налична е грешката "java.lang.ClassFormatError", тази грешка означава, че:
+
+Виртуалната машина на Java се опитва да прочете файл от клас и да определи, дали файлът е не подлежи на компилация или по друг начин не може да се интерпретира.
+Възможно е това да е грешка в компилатора на Java 8. Пост в stackoverflow.com https://stackoverflow.com/questions/24580370/classformaterror-in-java-8?answertab=votes#tab-top.
+
+Можем да допуснем, че кодат Ви е валиден, тоест грешката не е при Вас. 
