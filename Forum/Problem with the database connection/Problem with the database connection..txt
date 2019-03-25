@@ -1,0 +1,16 @@
+Link: https://softuni.bg/forum/26209/problem-s-vryzkata-kym-bazata-danni
+
+Answer:
+Здравей, kosyokosev
+
+Когатo си преинсталирах операционната система Windows 10, имах проблем при свързването с DB. Реших си проблема като добавих "&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false"
+
+Пробвай да добавиш:
+
+jdbc:mysql://localhost:3306/exodia_db2?useSSL=false&amp;createDatabaseIfNotExist=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC
+Важно: може да се изисква & вместо &amp;
+
+В случай, че се изисква & пробвай да добавиш:
+
+jdbc:mysql://localhost:3306/exodia_db2?useSSL=false&createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+Надявам се отговора да е бил полезен, но ако проблема се окаже друг няма да мога да помона.
