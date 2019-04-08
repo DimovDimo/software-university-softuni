@@ -1,0 +1,32 @@
+Link: https://softuni.bg/forum/26364/03oldest-family-member-help-moje-li-nyakoy-da-mi-pomogne
+
+Answer:
+Здравей, nika_29
+
+Създава се нов лист new List<Person>(), защото ако не бъде създаден membersList и MembersList ще бъдат null и програмата няма да може да работи.
+
+На MembersList имаме set { membersList = value; }. Следователно когато направим this.MembersList = new List<Person>() ще имаме membersList = new List<Person>().
+
+public Family() е публичен конструктор и е нужно да бъде достъпен от всички.
+
+В метода AddMember добавяме елемент от клас Person. На MembersList имаме set { membersList = value; }. Следователно когато направим this.MembersList.Add(member) ще имаме this.membersList.Add(member).
+
+public void AddMember(Person member)
+{
+    this.MembersList.Add(member);
+}
+В метода GetOldestMember() ще вземем един елемент от клас Person намиращ се в membersList.
+
+Използваме linq:
+
+1. OrderByDescending означава, че искаме да подредим елементите в обратен ред. Това означава, че искаме да подредим елементите от най-големия (на първо място) към на-малкия (на последно място).
+
+2. (x => x.Age) това е критерия по който ще подредим елементите. В този случай това е x.Age възрастта на Person.
+
+3. FirstOrDefault() ще върне първият намерен или стойноста по default (това е стойноста която приема дадена променлива, ако не бъде дадена друа стойност). За клас Person default е null. Следователно ако membersList е празен ще получим null.
+
+public Person GetOldestMember()
+{
+    return this.membersList.OrderByDescending(x => x.Age).FirstOrDefault();
+}
+Надявам се отовора да е бил полезен.
