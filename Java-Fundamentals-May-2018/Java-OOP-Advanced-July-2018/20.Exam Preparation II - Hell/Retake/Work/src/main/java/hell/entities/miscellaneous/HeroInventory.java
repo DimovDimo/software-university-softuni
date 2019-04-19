@@ -80,13 +80,16 @@ public class HeroInventory implements Inventory {
             this.commonItems.remove(item);
         }
 
+        //TODO: Initialize the newItem variable, with an object of the CommonItem class.
+        //TODO: Initialize the newItem variable, with the stat bonuses of the "recipe" parameter.
         Item newItem = new CommonItem(
                 recipe.getName(),
                 recipe.getStrengthBonus(),
                 recipe.getAgilityBonus(),
                 recipe.getIntelligenceBonus(),
                 recipe.getHitPointsBonus(),
-                recipe.getDamageBonus());
+                recipe.getDamageBonus()
+        );
 
         this.commonItems.put(newItem.getName(), newItem);
     }

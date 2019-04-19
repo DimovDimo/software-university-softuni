@@ -3,17 +3,11 @@ package hell.entities.items;
 import hell.interfaces.Item;
 
 public abstract class BaseItem implements Item {
-
     private String name;
-
     private int strengthBonus;
-
     private int agilityBonus;
-
     private int intelligenceBonus;
-
     private int hitPointsBonus;
-
     private int damageBonus;
 
     protected BaseItem(String name, int strengthBonus, int agilityBonus, int intelligenceBonus, int hitPointsBonus, int damageBonus) {

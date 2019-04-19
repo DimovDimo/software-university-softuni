@@ -41,30 +41,26 @@ public class Main {
 
     private static String interpetCommand(String command, String[] arguments) {
         Hero hero;
+        Item item;
         switch (command) {
             case "Hero":
-                hero = createHero(arguments[0], arguments[1]);
-
-                heroes.put(hero.getName(), hero);
-
-                return String.format("Created %s - %s",
-                        hero.getClass().getSimpleName(),
-                        hero.getName());
+                return heroCommand(arguments);
             case "Item":
-                hero = heroes.get(arguments[1]);
-                Item commonItem = new CommonItem(
-                        arguments[0],
-                        Integer.parseInt(arguments[2]),
-                        Integer.parseInt(arguments[3]),
-                        Integer.parseInt(arguments[4]),
-                        Integer.parseInt(arguments[5]),
-                        Integer.parseInt(arguments[6])
-                );
-                hero.addItem(commonItem);
+                String name = arguments[0];
+                String heroName = arguments[1];
+                int strengthBonus = Integer.parseInt(arguments[2]);
+                int agilityBonus = Integer.parseInt(arguments[3]);
+                int intelligenceBonus = Integer.parseInt(arguments[4]);
+                int hitpointsBonus = Integer.parseInt(arguments[5]);
+                int damageBonus = Integer.parseInt(arguments[6]);
 
-                return String.format("Added item - %s to Hero - %s",
-                        commonItem.getName(),
-                        hero.getName());
+                item = new CommonItem(name,strengthBonus, agilityBonus, intelligenceBonus, hitpointsBonus, damageBonus);
+
+                if(heroes.containsKey(heroName)){
+                    heroes.get(heroName).addItem(item);
+                    return String.format("Added item - %s to Hero - %s", name, heroName);
+                }
+
             case "Recipe":
                 hero = heroes.get(arguments[1]);
                 Recipe recipeItem = new RecipeItem(
@@ -87,6 +83,7 @@ public class Main {
             case "Quit":
                 return printHeroesInfo();
         }
+
         return null;
     }
 
@@ -145,15 +142,23 @@ public class Main {
         return heroesInfo.toString().trim();
     }
 
-    private static Hero createHero(String name, String type) {
-        switch (type) {
+    private static String heroCommand(String[] arguments) {
+        Hero hero;
+        String name = arguments[0];
+        String type = arguments[1];
+        switch (type){
             case "Barbarian":
-                return new Barbarian(name, new HeroInventory());
+                hero = new Barbarian(name, new HeroInventory());
             case "Assassin":
-                return new Assassin(name, new HeroInventory());
+                hero = new Assassin(name, new HeroInventory());
             case "Wizard":
-                return new Wizard(name, new HeroInventory());
+                hero = new Wizard(name, new HeroInventory());
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + type);
         }
-        return null;
+
+        heroes.put(hero.getName(), hero);
+        return String.format("Created %s - %s", type, name);
     }
 }

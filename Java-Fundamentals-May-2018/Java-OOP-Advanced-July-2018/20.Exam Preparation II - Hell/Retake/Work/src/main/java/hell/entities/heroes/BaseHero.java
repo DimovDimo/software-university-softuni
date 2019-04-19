@@ -1,5 +1,6 @@
 package hell.entities.heroes;
 
+import hell.entities.miscellaneous.HeroInventory;
 import hell.entities.miscellaneous.ItemCollection;
 import hell.interfaces.Hero;
 import hell.interfaces.Inventory;
@@ -14,17 +15,11 @@ import java.util.stream.Collectors;
 public abstract class BaseHero implements Hero {
 
     private String name;
-
     private int strength;
-
     private int agility;
-
     private int intelligence;
-
     private int hitPoints;
-
     private int damage;
-
     private Inventory inventory;
 
     protected BaseHero(String name, int strength, int agility, int intelligence, int hitPoints, int damage, Inventory inventory) {
@@ -74,7 +69,7 @@ public abstract class BaseHero implements Hero {
         Field[] inventoryFields = this.inventory.getClass().getDeclaredFields();
 
         for (Field inventoryField : inventoryFields) {
-            if (inventoryField.isAnnotationPresent(ItemCollection.class)) {
+            if(inventoryField.isAnnotationPresent(ItemCollection.class)){
                 inventoryField.setAccessible(true);
                 Map<String, Item> itemMap = null;
                 try {
@@ -82,6 +77,7 @@ public abstract class BaseHero implements Hero {
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
+
                 items = itemMap.values();
             }
         }

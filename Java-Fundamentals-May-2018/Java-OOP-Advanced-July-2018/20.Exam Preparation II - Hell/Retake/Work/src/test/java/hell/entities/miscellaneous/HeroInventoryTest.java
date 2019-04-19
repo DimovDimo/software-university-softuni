@@ -10,23 +10,24 @@ import org.mockito.Mockito;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+
+import static org.junit.Assert.*;
 
 public class HeroInventoryTest {
 
     private static final int VALUE = Integer.MAX_VALUE;
-    private static final String STRENGTH_MESSAGE = "Strength is not correct";
-    private static final String AGILITY_MESSAGE = "Agility is not correct";
-    private static final String INTELLIGENCE_MESSAGE = "Intelligence is not correct";
-    private static final String HIT_POINTS_MESSAGE = "HitPoints is not correct";
-    private static final String DAMAGE_MESSAGE = "Damage is not correct";
 
     private Inventory inventory;
 
     @Before
     public void setUp() throws Exception {
-        this.inventory = new HeroInventory();
+        inventory = new HeroInventory();
+
+        this.seedCommonItems();
+        this.seedRecipeItem();
     }
 
     private Item createCommonItemMock() {
@@ -69,67 +70,42 @@ public class HeroInventoryTest {
 
     @Test
     public void getTotalStrengthBonus() {
-        // Arrange
-        this.seedCommonItems();
+        long actual = inventory.getTotalStrengthBonus();
+        long expected = VALUE * 3L;
 
-        // Act
-        long actualTotalBonus = this.inventory.getTotalStrengthBonus();
-        long expectedTotalBonus = 3L * VALUE;
-
-        // Assert
-        Assert.assertEquals(STRENGTH_MESSAGE, expectedTotalBonus, actualTotalBonus);
+        Assert.assertEquals("", expected, actual);
     }
 
     @Test
     public void getTotalAgilityBonus() {
-        // Arrange
-        this.seedCommonItems();
+        long actual = inventory.getTotalAgilityBonus();
+        long expected = VALUE * 3L;
 
-        // Act
-        long actualTotalBonus = this.inventory.getTotalAgilityBonus();
-        long expectedTotalBonus = 3L * VALUE;
-
-        // Assert
-        Assert.assertEquals(AGILITY_MESSAGE, expectedTotalBonus, actualTotalBonus);
+        Assert.assertEquals("", expected, actual);
     }
 
     @Test
     public void getTotalIntelligenceBonus() {
-        // Arrange
-        this.seedCommonItems();
+        long actual = inventory.getTotalIntelligenceBonus();
+        long expected = VALUE * 3L;
 
-        // Act
-        long actualTotalBonus = this.inventory.getTotalIntelligenceBonus();
-        long expectedTotalBonus = 3L * VALUE;
-
-        // Assert
-        Assert.assertEquals(INTELLIGENCE_MESSAGE, expectedTotalBonus, actualTotalBonus);
+        Assert.assertEquals("", expected, actual);
     }
 
     @Test
     public void getTotalHitPointsBonus() {
-        // Arrange
-        this.seedCommonItems();
+        long actual = inventory.getTotalHitPointsBonus();
+        long expected = VALUE * 3L;
 
-        // Act
-        long actualTotalBonus = this.inventory.getTotalHitPointsBonus();
-        long expectedTotalBonus = 3L * VALUE;
-
-        // Assert
-        Assert.assertEquals(HIT_POINTS_MESSAGE, expectedTotalBonus, actualTotalBonus);
+        Assert.assertEquals("", expected, actual);
     }
 
     @Test
     public void getTotalDamageBonus() {
-        // Arrange
-        this.seedCommonItems();
+        long actual = inventory.getTotalDamageBonus();
+        long expected = VALUE * 3L;
 
-        // Act
-        long actualTotalBonus = this.inventory.getTotalDamageBonus();
-        long expectedTotalBonus = 3L * VALUE;
-
-        // Assert
-        Assert.assertEquals(DAMAGE_MESSAGE, expectedTotalBonus, actualTotalBonus);
+        Assert.assertEquals("", expected, actual);
     }
 
     @Test
