@@ -1,0 +1,56 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="index">
+        <pattern value="" />
+        <view-id value="/faces/index.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="register">
+        <pattern value="/register" />
+        <view-id value="/faces/register.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="login">
+        <pattern value="/login" />
+        <view-id value="/faces/login.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="home">
+        <pattern value="/home" />
+        <view-id value="/faces/home.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="create">
+        <pattern value="/create-problem" />
+        <view-id value="/faces/view/problem/create-problem.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="details">
+        <pattern value="/details-problem" />
+        <view-id value="/faces/view/problem/details-problem.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="all">
+        <pattern value="/all-problems" />
+        <view-id value="/faces/view/problem/all-problems.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="create">
+        <pattern value="/create-submission" />
+        <view-id value="/faces/view/submission/create-submission.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="details">
+        <pattern value="/details-submission" />
+        <view-id value="/faces/view/submission/details-submission.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="all">
+        <pattern value="/all-submissions" />
+        <view-id value="/faces/view/submission/all-submissions.xhtml" />
+    </url-mapping>
+
+</pretty-config>

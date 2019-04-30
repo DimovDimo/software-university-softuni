@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:include src="templates/head.xhtml"/>
+<h:body>
+    <div class="container-fluid">
+        <ui:include src="templates/user-navbar.xhtml"/>
+        <main class="mt-3">
+        <c:forEach items="#{ProblemDetailsBean.problems}" var="problem">
+        <h1 class="text-center text-judge">Problem - #{problem.name}</h1>
+        <hr class="hr-2 bg-judge">
+        <h3 class="text-judge my-3">Submit your code here:</h3>
+        <form id="create-submission-form" class="form" action="#{SubmissionCreateBean}" method="POST">
+            <div class="w-100 rounded bg-code text-code d-flex flex-column p-3">
+                <h:textarea class="code-line" value="#{SubmissionCreateBean.submitCreateBindingModel.name}"></h:textarea>
+            </div>
+            <hr class="hr-2 bg-judge">
+            <div class="d-flex justify-content-center">
+                <h:commandButton type="submit" class="btn bg-mishmash text-white"  value="Create" action="#{SubmissionCreateBean}"/>
+            </div>
+            <hr class="hr-2 bg-judge">
+        </form>
+        </main>
+        <ui:include src="templates/footer.xhtml"/>
+    </div>
+</h:body>
+</html>

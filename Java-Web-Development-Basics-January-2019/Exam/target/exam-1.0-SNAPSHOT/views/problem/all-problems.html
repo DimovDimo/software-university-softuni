@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:include src="templates/head.xhtml"/>
+<h:body>
+    <div class="container-fluid">
+        <ui:include src="templates/user-navbar.xhtml"/>
+        <main class="mt-3">
+            <h1 class="text-judge text-center font-weight-bold">All Problems</h1>
+            <hr class="hr-2 bg-judge">
+            <table class="table table-hover">
+                <thead>
+                <tr class="row">
+                    <th class="col-md-1" scope="col"><h5 class="text-center">#</h5></th>
+                    <th class="col-md-3" scope="col"><h5 class="text-center">Name</h5></th>
+                    <th class="col-md-2" scope="col"><h5 class="text-center">Points</h5></th>
+                    <th class="col-md-2" scope="col"><h5 class="text-center">Participants</h5></th>
+                    <th class="col-md-2" scope="col"><h5 class="text-center">Success Rate</h5></th>
+                    <th class="col-md-2" scope="col"><h5 class="text-center">Actions</h5></th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach items="#{AllProblemBean.problems}" var="problem">
+                <tr class="row">
+                    <td class="col-md-1" scope="col"><h5 class="text-center">#</h5></td>
+                    <td class="col-md-3" scope="col"><h5 class="text-center">#{problem.name}</h5></td>
+                    <td class="col-md-2" scope="col"><h5 class="text-center">#{problem.points}</h5></td>
+                    <td class="col-md-2" scope="col"><h5 class="text-center">#{problem.participants}</h5></td>
+                    <td class="col-md-2" scope="col"><h5 class="text-center">#{problem.successRate}</h5></td>
+                    <td class="col-md-2 d-flex justify-content-around" scope="col">
+                        <h:commandButton type="submit" class="btn bg-mishmash text-white"  value="Submit" action="#{SubmissionCreateBean(problem.id)}"/>
+                        <h:commandButton type="submit" class="btn bg-mishmash text-white"  value="Create" action="#{ProblemDetailsBean(problem.id)}"/>
+                    </td>
+                </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+            <hr class="hr-2 bg-judge">
+        </main>
+        <ui:include src="templates/footer.xhtml"/>
+    </div>
+</h:body>
+</html>
