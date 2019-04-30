@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<header>
+    <th:block th:include="~{fragments/navbar}"></th:block>
+</header>
+<main class="mt-3">
+    <h1 class="text-center text-dark">Add Quote</h1>
+    <hr class="hr-2 bg-dark w-25">
+    <form id="add-quote-form" class="form w-25 mx-auto" th:action="@{/quotes/add}" method="post"><input type="hidden" name="_csrf" value="c686cd14-a7f9-4216-8009-c093b7d3df86">
+        <div class="form-group">
+            <label for="add-quote-text" class="font-weight-bold">📍 Text</label>
+            <textarea name="text" id="add-quote-text" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="add-quote-author" class="font-weight-bold">📍 Author</label>
+            <input type="text" class="form-control text-center" id="add-quote-author" name="author">
+        </div>
+        <div class="form-group">
+            <label for="add-quote-reason" class="font-weight-bold">Reason</label>
+            <textarea name="reason" id="add-quote-reason" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="add-quote-place" class="font-weight-bold">Place</label>
+            <input type="text" class="form-control text-center" id="add-quote-place" name="place">
+        </div>
+        <div class="form-group">
+            <label for="add-quote-year" class="font-weight-bold">📍 Year</label>
+            <input type="number" step="1" class="form-control text-center" id="add-quote-year" name="year">
+        </div>
+        <hr class="hr-2 bg-dark">
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Add Quote</button>
+        </div>
+    </form>
+</main>
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>

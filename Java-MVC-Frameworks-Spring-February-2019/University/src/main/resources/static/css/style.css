@@ -1,0 +1,154 @@
+hr.hr-2 {
+    height: 2px;
+}
+
+.logout-button {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.logout-button:hover {
+    cursor: pointer;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+img.img-thumbnail {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.custom-css-radio-button{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e5e5e5;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 15px;
+    background-color: #e5e5e5;
+}
+
+.custom-css-modules-navigation{
+    padding-bottom: 50px;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.custom-css-profile-img{
+    text-align: center;
+    height: 190px;
+    width: 190px;
+}
+
+.custom-css-button-root{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.custom-css-profile-img-min{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+}
+
+.custom-css-course-image-home{
+    text-align: center;
+    height: 300px;
+    border-radius: 300px;
+}
+
+.custom-css-course-image-icon{
+    text-align: center;
+    height: 40px;
+    border-radius: 300px;
+}
+
+.custom-css-form-buttons{
+    margin-left: 80px;
+}
+
+.custom-css-canvas{
+    height: 300px;
+    width: 300px;
+    border-radius: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 550px) {
+    .custom-css-course-image-home{
+        text-align: center;
+        height: 200px;
+        border-radius: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .custom-css-course-image-home{
+        text-align: center;
+        height: 100px;
+        border-radius: 300px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .custom-css-course-image-home{
+        text-align: center;
+        height: 0px;
+        border-radius: 300px;
+    }
+}
+
+.custom-css-user{
+    color: #005cbf !important;
+}
+
+.custom-css-sero-padding{
+    padding: 0px;
+}
+
+.custom-css-еrror{
+    color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+    .custom-css-course-image-index{
+        text-align: center;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .custom-css-course-image-index{
+        text-align: center;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .custom-css-course-image-index{
+        text-align: center;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .custom-css-course-image-index{
+        text-align: center;
+        height: 0px;
+    }
+}

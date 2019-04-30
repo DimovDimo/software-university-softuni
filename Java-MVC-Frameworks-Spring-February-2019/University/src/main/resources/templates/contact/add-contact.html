@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<header>
+    <th:block th:include="~{fragments/navbar}"></th:block>
+</header>
+<main class="mt-3">
+    <h1 class="text-center">Contact us</h1>
+    <hr class="hr-2 bg-dark w-25">
+    <form id="add-course-form" class="form w-25 mx-auto" th:action="@{/contact/add}" method="post"
+          enctype="multipart/form-data"><input type="hidden" name="_csrf" value="c686cd14-a7f9-4216-8009-c093b7d3df86">
+        <div class="row">
+            <div class="col col-md-12 mt-5">
+                <h5>15-17 Tintyava Str., 1113 NDZ Dianabad, Sofia</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12 mt-5">
+                <h5>Working hours:</h5>
+                <p>10:00 - 20:00 (Monday - Friday)</p>
+                <p>09:00 - 18:00 (Saturday and Sunday)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12 mt-5">
+                <h5>Phone number:</h5>
+                <p>011 55 21 5555 5555</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12 mt-5">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="add-course-title" class="font-weight-bold">📍 Title</label>
+            <input type="text" class="form-control text-center" id="add-course-title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="add-course-description" class="font-weight-bold">📍 Description</label>
+            <textarea name="description" id="add-course-description" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="add-course-phone" class="font-weight-bold">Phone</label>
+            <input type="text" class="form-control text-center" id="add-course-phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="add-course-zipCode" class="font-weight-bold">ZIP code</label>
+            <input type="text" class="form-control text-center" id="add-course-zipCode" name="zipCode">
+        </div>
+        <div class="form-group">
+            <label for="add-course-address" class="font-weight-bold">Address</label>
+            <input type="text" class="form-control text-center" id="add-course-address" name="address">
+        </div>
+        <div class="form-group">
+            <label for="add-course-skype" class="font-weight-bold">Skype</label>
+            <input type="text" class="form-control text-center" id="add-course-skype" name="skype">
+        </div>
+        <div class="form-group">
+            <label for="add-course-website" class="font-weight-bold">Website</label>
+            <input type="text" class="form-control text-center" id="add-course-website" name="website">
+        </div>
+        <hr class="hr-2 bg-dark w-25">
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Contact us</button>
+        </div>
+    </form>
+</main>
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>
