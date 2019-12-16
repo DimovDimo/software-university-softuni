@@ -1,5 +1,0 @@
-C:\Users\s_she\documents\SVN\DataStructures\Data-Structures-May-2017\02. Data-Structures-Linear-Data-Structures-Stacks-and-Queues\02. Circular-Queue-Skeleton\CircularQueue\bin\Debug\CircularQueue.exe
-C:\Users\s_she\documents\SVN\DataStructures\Data-Structures-May-2017\02. Data-Structures-Linear-Data-Structures-Stacks-and-Queues\02. Circular-Queue-Skeleton\CircularQueue\bin\Debug\CircularQueue.pdb
-C:\Users\s_she\documents\SVN\DataStructures\Data-Structures-May-2017\02. Data-Structures-Linear-Data-Structures-Stacks-and-Queues\02. Circular-Queue-Skeleton\CircularQueue\obj\Debug\CircularQueue.csprojResolveAssemblyReference.cache
-C:\Users\s_she\documents\SVN\DataStructures\Data-Structures-May-2017\02. Data-Structures-Linear-Data-Structures-Stacks-and-Queues\02. Circular-Queue-Skeleton\CircularQueue\obj\Debug\CircularQueue.exe
-C:\Users\s_she\documents\SVN\DataStructures\Data-Structures-May-2017\02. Data-Structures-Linear-Data-Structures-Stacks-and-Queues\02. Circular-Queue-Skeleton\CircularQueue\obj\Debug\CircularQueue.pdb
